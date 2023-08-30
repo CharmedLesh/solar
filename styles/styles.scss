@@ -400,15 +400,15 @@ h6 {
 
 .products {
 	width: 100%;
-	background-color: #fdfdfd;
 
 	&.products_desktop {
+		display: none;
 		padding: 45px 45px 130px;
-		display: flex;
 		justify-content: space-between;
 		position: relative;
+		background-color: #fdfdfd;
 
-		.product-card__split-line {
+		.products__split-line {
 			height: 528.94px;
 			width: 1px;
 			border: none;
@@ -416,11 +416,11 @@ h6 {
 			position: absolute;
 			top: 120px;
 
-			&.product-card__split-line_first {
+			&.products__split-line_first {
 				left: 438.75px;
 			}
 
-			&.product-card__split-line_second {
+			&.products__split-line_second {
 				right: 438.75px;
 			}
 		}
@@ -428,6 +428,53 @@ h6 {
 }
 
 .product-card {
+	.product-card__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.product-card__title {
+		text-align: center;
+	}
+
+	.product-card__decoration-pic {
+		display: flex;
+		padding: 5px 0px;
+	}
+
+	.product-card__description {
+		text-align: center;
+	}
+
+	&.product-card_mobile {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.product-card__pic {
+			height: 294px;
+			width: 385px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.product-card__content {
+			margin-top: 12px;
+
+			.product-card__title {
+				font-size: 16px;
+				letter-spacing: 1.04px;
+			}
+
+			.product-card__description {
+				font-size: 14px;
+				letter-spacing: 1.4px;
+			}
+		}
+	}
+
 	&.product-card_desktop {
 		.product-card__pic {
 			width: 385px;
@@ -447,25 +494,15 @@ h6 {
 		}
 
 		.product-card__content {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
 			margin-top: 55px;
 
 			.product-card__title {
 				font-size: 23px;
 				letter-spacing: 1.495px;
-				text-align: center;
-			}
-
-			.product-card__decoration-pic {
-				display: flex;
-				padding: 5px 0px;
 			}
 
 			.product-card__description {
 				max-width: 292px;
-				text-align: center;
 				font-size: 15px;
 				letter-spacing: 1.5px;
 			}
@@ -804,6 +841,14 @@ h6 {
 		}
 
 		.landing_desktop {
+			display: flex;
+		}
+
+		.products_mobile {
+			display: none;
+		}
+
+		.products_desktop {
 			display: flex;
 		}
 

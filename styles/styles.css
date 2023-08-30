@@ -350,15 +350,15 @@ h6 {
 
 .products {
   width: 100%;
-  background-color: #fdfdfd;
 }
 .products.products_desktop {
+  display: none;
   padding: 45px 45px 130px;
-  display: flex;
   justify-content: space-between;
   position: relative;
+  background-color: #fdfdfd;
 }
-.products.products_desktop .product-card__split-line {
+.products.products_desktop .products__split-line {
   height: 528.94px;
   width: 1px;
   border: none;
@@ -366,13 +366,51 @@ h6 {
   position: absolute;
   top: 120px;
 }
-.products.products_desktop .product-card__split-line.product-card__split-line_first {
+.products.products_desktop .products__split-line.products__split-line_first {
   left: 438.75px;
 }
-.products.products_desktop .product-card__split-line.product-card__split-line_second {
+.products.products_desktop .products__split-line.products__split-line_second {
   right: 438.75px;
 }
 
+.product-card .product-card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product-card .product-card__title {
+  text-align: center;
+}
+.product-card .product-card__decoration-pic {
+  display: flex;
+  padding: 5px 0px;
+}
+.product-card .product-card__description {
+  text-align: center;
+}
+.product-card.product-card_mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product-card.product-card_mobile .product-card__pic {
+  height: 294px;
+  width: 385px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product-card.product-card_mobile .product-card__content {
+  margin-top: 12px;
+}
+.product-card.product-card_mobile .product-card__content .product-card__title {
+  font-size: 16px;
+  letter-spacing: 1.04px;
+}
+.product-card.product-card_mobile .product-card__content .product-card__description {
+  font-size: 14px;
+  letter-spacing: 1.4px;
+}
 .product-card.product-card_desktop .product-card__pic {
   width: 385px;
   height: 294px;
@@ -389,23 +427,14 @@ h6 {
   background-image: url("../img/product_3.jpg");
 }
 .product-card.product-card_desktop .product-card__content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-top: 55px;
 }
 .product-card.product-card_desktop .product-card__content .product-card__title {
   font-size: 23px;
   letter-spacing: 1.495px;
-  text-align: center;
-}
-.product-card.product-card_desktop .product-card__content .product-card__decoration-pic {
-  display: flex;
-  padding: 5px 0px;
 }
 .product-card.product-card_desktop .product-card__content .product-card__description {
   max-width: 292px;
-  text-align: center;
   font-size: 15px;
   letter-spacing: 1.5px;
 }
@@ -666,6 +695,12 @@ h6 {
     display: none;
   }
   .wrapper .landing_desktop {
+    display: flex;
+  }
+  .wrapper .products_mobile {
+    display: none;
+  }
+  .wrapper .products_desktop {
     display: flex;
   }
   .wrapper .info_mobile {
