@@ -14,45 +14,6 @@
     <meta name="author" content="Viacheslav Matvieiev" />
     <style amp-custom>
         @import url('./styles/styles.css');
-
-        .amp-carousel-button {
-            top: 71%;
-            cursor: pointer;
-            background-color: transparent;
-            width: 22px;
-            height: 49px;
-            background-size: cover;
-            outline: none;
-        }
-
-        .amp-carousel-button:focus {
-            outline: none;
-            border: none;
-        }
-
-        .amp-carousel-button-prev {
-            background-image: url('./img/arrow-left.svg');
-        }
-
-        .amp-carousel-button-prev:hover {
-            background-image: url('./img/arrow-left-hover.svg');
-        }
-
-        .amp-carousel-button-prev:active {
-            background-image: url('./img/arrow-left-active.svg');
-        }
-
-        .amp-carousel-button-next {
-            background-image: url('./img/arrow-right.svg');
-        }
-
-        .amp-carousel-button-next:hover {
-            background-image: url('./img/arrow-right-hover.svg');
-        }
-
-        .amp-carousel-button-next:active {
-            background-image: url('./img/arrow-right-active.svg');
-        }
     </style>
     <style amp-boilerplate>
         body {
@@ -186,9 +147,63 @@
         <div class="massages">massages</div>
         <div class="facials">facials</div>
         <div class="facials-slider">facials slider</div>
-        <div class="reviews-slider">reviews slider</div>
+        <div class="reviews reviews_mobile">
+            <div class="reviews__title">Reviews from our happy clients</div>
+            <amp-carousel id="reviews-carousel_mobile" height="92" layout="fixed-height" type="slides"
+                aria-label="Reviews carousel" loop>
+                <div class="review-card review-card_mobile">
+                    <div class="review-card__text">
+                        “This magic place helps me to deal with all my stress. Can’t wait to enjoy make my next spa
+                        program”
+                    </div>
+                    <div class="review-card__author">Anna</div>
+                </div>
+                <div class="review-card review-card_mobile">
+                    <div class="review-card__text">
+                        “Stress doesn't stand a chance when you step into this mystical spa haven. I'm
+                        practically daydreaming about my next visit.”
+                    </div>
+                    <div class="review-card__author">Anastasia</div>
+                </div>
+                <div class="review-card review-card_mobile">
+                    <div class="review-card__text">
+                        “This enchanting oasis truly works wonders for my stress relief. I'm already looking forward to
+                        indulging in my next spa experience.”
+                    </div>
+                    <div class="review-card__author">Maria</div>
+                </div>
+            </amp-carousel>
+        </div>
+        <div class="reviews reviews_desktop">
+            <div class="reviews__title">Reviews from our happy clients</div>
+            <amp-carousel id="reviews-carousel_desktop" height="338" layout="fixed-height" type="slides"
+                aria-label="Reviews carousel" loop controls>
+                <div class="review-card review-card_desktop">
+                    <div class="review-card__text">
+                        “This magic place helps me to deal with all my stress. Can’t wait to enjoy make my next spa
+                        program”
+                    </div>
+                    <div class="review-card__author">Anna</div>
+                </div>
+                <div class="review-card review-card_desktop">
+                    <div class="review-card__text">
+                        “Stress doesn't stand a chance when you step into this mystical spa haven. I'm
+                        practically daydreaming about my next visit.”
+                    </div>
+                    <div class="review-card__author">Anastasia</div>
+                </div>
+                <div class="review-card review-card_desktop">
+                    <div class="review-card__text">
+                        “This enchanting oasis truly works wonders for my stress relief. I'm already looking forward to
+                        indulging in my next spa experience.”
+                    </div>
+                    <div class="review-card__author">Maria</div>
+                </div>
+            </amp-carousel>
+        </div>
         <div class="products products_mobile">
-            <amp-carousel height="502" layout="fixed-height" type="slides" role="region" aria-label="products carousel">
+            <amp-carousel id="products-carousel" height="502" layout="fixed-height" type="slides" role="region"
+                aria-label="Products carousel" autoplay delay="5000" loop controls>
                 <div class="product-card product-card_mobile">
                     <div class="product-card__pic">
                         <amp-img alt="Product 1" src="./img/product_1.jpg" width="369" height="246" layout="fixed">

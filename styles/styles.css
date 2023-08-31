@@ -1,4 +1,112 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Prata&display=swap");
+.amp-carousel-button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+}
+.amp-carousel-button:focus {
+  outline: none;
+  border: none;
+}
+
+#reviews-carousel_desktop .amp-carousel-button {
+  top: 247px;
+}
+
+#reviews-carousel_desktop .amp-carousel-button-next {
+  right: 398px;
+  display: block;
+  height: 14px;
+  width: 28px;
+  border: none;
+  background-image: none;
+  background-color: #000000;
+  transition: background-color 0.2s;
+  mask: url("../img/arrow-right-sm.svg");
+  -webkit-mask: url("../img/arrow-right-sm.svg");
+}
+#reviews-carousel_desktop .amp-carousel-button-next:hover {
+  background-color: #6a7571;
+}
+#reviews-carousel_desktop .amp-carousel-button-next:active {
+  background-color: #55605c;
+}
+#reviews-carousel_desktop .amp-carousel-button-next:focus {
+  background-color: #55605c;
+}
+
+#reviews-carousel_desktop .amp-carousel-button-prev {
+  left: 398px;
+  display: block;
+  height: 14px;
+  width: 28px;
+  border: none;
+  background-image: none;
+  background-color: #000000;
+  transition: background-color 0.2s;
+  mask: url("../img/arrow-left-sm.svg");
+  -webkit-mask: url("../img/arrow-left-sm.svg");
+}
+#reviews-carousel_desktop .amp-carousel-button-prev:hover {
+  background-color: #6a7571;
+}
+#reviews-carousel_desktop .amp-carousel-button-prev:active {
+  background-color: #55605c;
+}
+#reviews-carousel_desktop .amp-carousel-button-prev:focus {
+  background-color: #55605c;
+}
+
+#reviews-carousel_mobile .amp-carousel-button {
+  display: none;
+}
+
+#products-carousel .amp-carousel-button {
+  top: 71%;
+}
+
+#products-carousel .amp-carousel-button-next {
+  display: block;
+  width: 22px;
+  height: 49px;
+  border: none;
+  background-image: none;
+  background-color: #000000;
+  transition: background-color 0.2s;
+  mask: url("../img/arrow-right.svg");
+  -webkit-mask: url("../img/arrow-right.svg");
+}
+#products-carousel .amp-carousel-button-next:hover {
+  background-color: rgba(88, 98, 93, 0.8);
+}
+#products-carousel .amp-carousel-button-next:active {
+  background-color: #48544f;
+}
+#products-carousel .amp-carousel-button-next:focus {
+  background-color: #48544f;
+}
+
+#products-carousel .amp-carousel-button-prev {
+  display: block;
+  width: 22px;
+  height: 49px;
+  border: none;
+  background-image: none;
+  background-color: #000000;
+  transition: background-color 0.2s;
+  mask: url("../img/arrow-left.svg");
+  -webkit-mask: url("../img/arrow-left.svg");
+}
+#products-carousel .amp-carousel-button-prev:hover {
+  background-color: rgba(88, 98, 93, 0.8);
+}
+#products-carousel .amp-carousel-button-prev:active {
+  background-color: #48544f;
+}
+#products-carousel .amp-carousel-button-prev:focus {
+  background-color: #48544f;
+}
+
 html,
 body,
 div,
@@ -101,6 +209,7 @@ button {
   border: 0;
   padding: 0;
   background: none;
+  cursor: pointer;
 }
 
 a {
@@ -224,7 +333,7 @@ h6 {
   display: flex;
 }
 .header.header_desktop .header__nav-menu {
-  width: 50%;
+  width: 640px;
   position: absolute;
   left: 25%;
 }
@@ -282,7 +391,6 @@ h6 {
 }
 
 .action-button {
-  cursor: pointer;
   border: 1px solid #8e9993;
   width: 175px;
   height: 50px;
@@ -346,6 +454,59 @@ h6 {
 }
 .nav-menu .nav-menu__item {
   font-family: "Open Sans", sans-serif;
+}
+
+.reviews {
+  width: 100%;
+  background-color: rgba(142, 153, 147, 0.62);
+}
+.reviews .reviews__title {
+  text-align: center;
+}
+.reviews.reviews_mobile {
+  padding: 18px 15px 0px 15px;
+}
+.reviews.reviews_mobile .reviews__title {
+  font-size: 12px;
+  margin-bottom: 14px;
+  letter-spacing: 0.78px;
+}
+.reviews.reviews_desktop {
+  display: none;
+  padding: 50px 200px 0px 200px;
+}
+.reviews.reviews_desktop .reviews__title {
+  font-size: 23px;
+  letter-spacing: 1.495px;
+  margin-bottom: 60px;
+}
+
+.review-card .review-card__text {
+  text-align: center;
+}
+.review-card .review-card__author {
+  text-align: center;
+}
+.review-card.review-card_mobile .review-card__text {
+  font-size: 10px;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+.review-card.review-card_mobile .review-card__author {
+  font-family: "Open Sans", sans-serif;
+  font-size: 11px;
+  letter-spacing: 1.1px;
+}
+.review-card.review-card_desktop .review-card__text {
+  font-size: 30px;
+  letter-spacing: 3px;
+  margin-bottom: 36px;
+  max-height: 122.4px;
+}
+.review-card.review-card_desktop .review-card__author {
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+  letter-spacing: 2.2px;
 }
 
 .products {
@@ -699,6 +860,12 @@ h6 {
   }
   .wrapper .products_mobile {
     display: none;
+  }
+  .wrapper .reviews_mobile {
+    display: none;
+  }
+  .wrapper .reviews_desktop {
+    display: block;
   }
   .wrapper .products_desktop {
     display: flex;
