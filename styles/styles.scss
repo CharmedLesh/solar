@@ -115,17 +115,19 @@ $arrow-right-sm: url('../img/arrow-right-sm.svg');
 	display: none;
 }
 
-//amp carousel arrows - products carousel ///
+/// amp carousel arrows - products carousel ///
 
 #products-carousel .amp-carousel-button {
 	top: 71%;
 }
 
 #products-carousel .amp-carousel-button-next {
+	right: 30px;
 	@include arrow-right;
 }
 
 #products-carousel .amp-carousel-button-prev {
+	left: 30px;
 	@include arrow-left;
 }
 
@@ -522,15 +524,27 @@ h6 {
 
 	.reviews__title {
 		text-align: center;
+		min-width: 290px;
 	}
 
 	&.reviews_mobile {
 		padding: 18px 15px 0px 15px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: relative;
 
 		.reviews__title {
 			font-size: 12px;
 			margin-bottom: 14px;
 			letter-spacing: 0.78px;
+		}
+
+		.reviews__selector {
+			position: absolute;
+			bottom: 12px;
+			display: flex;
+			left: calc(50% - 12.5px);
 		}
 	}
 
@@ -585,8 +599,76 @@ h6 {
 	}
 }
 
+.reviews-selector {
+	display: flex;
+	align-items: center;
+
+	.reviews-selector__dots-container {
+		display: flex;
+
+		.reviews-selector__dot-button {
+			width: 5px;
+			height: 5px;
+			border-radius: 10px;
+			display: inline-block;
+			background-color: rgba(106, 117, 113, 0.2);
+
+			&:nth-child(2) {
+				margin: 0px 5px;
+			}
+
+			&[option][selected] {
+				outline: none;
+				background-color: #6a7571;
+			}
+
+			// &.reviews-selector__dot-button_first {
+			// 	&[selected] {
+			// 		background-color: #6a7571;
+
+			// 		& ~ .reviews-selector__dot-button {
+			// 			background-color: red;
+			// 		}
+
+			// 		& + .reviews-selector__dot-button {
+			// 			background-color: blue;
+			// 		}
+			// 	}
+
+			// 	&:not([selected]) {
+			// 		background-color: blue;
+			// 	}
+			// }
+
+			// &.reviews-selector__dot-button_second {
+			// 	&[selected] {
+			// 		background-color: #6a7571;
+
+			// 		& + .reviews-selector__dot-button {
+			// 			background-color: blue;
+			// 		}
+			// 	}
+
+			// 	&:not([selected]) {
+			// 		background-color: red;
+			// 	}
+			// }
+
+			// &.reviews-selector__dot-button_third {
+			// 	background-color: #6a7571;
+			// }
+		}
+	}
+}
+
 .products {
 	width: 100%;
+
+	&.products_mobile {
+		display: flex;
+		justify-content: center;
+		overflow: hidden;
+	}
 
 	&.products_desktop {
 		display: none;

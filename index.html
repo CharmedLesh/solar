@@ -6,6 +6,7 @@
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
     <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
     <title>Solar</title>
     <link rel="canonical" href="./index.html">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Prata&display=swap"
@@ -149,8 +150,9 @@
         <div class="facials-slider">facials slider</div>
         <div class="reviews reviews_mobile">
             <div class="reviews__title">Reviews from our happy clients</div>
-            <amp-carousel id="reviews-carousel_mobile" height="92" layout="fixed-height" type="slides"
-                aria-label="Reviews carousel" loop>
+            <amp-carousel id="reviews-carousel_mobile" width="290" height="92" layout="fixed" type="slides"
+                aria-label="Reviews carousel"
+                on="slideChange: reviews-selector.toggle(index=event.index, value=true), reviews-selector__dots-container.goToSlide(index=event.index)">
                 <div class="review-card review-card_mobile">
                     <div class="review-card__text">
                         “This magic place helps me to deal with all my stress. Can’t wait to enjoy make my next spa
@@ -173,6 +175,16 @@
                     <div class="review-card__author">Maria</div>
                 </div>
             </amp-carousel>
+            <amp-selector id="reviews-selector" class="reviews-selector reviews__selector"
+                on="select:reviews-carousel_mobile.goToSlide(index=event.targetOption)" layout="container">
+                <div class="reviews-selector__dots-container">
+                    <button class="reviews-selector__dot-button reviews-selector__dot-button_first" option="0"
+                        selected></button>
+                    <button class="reviews-selector__dot-button reviews-selector__dot-button_second"
+                        option="1"></button>
+                    <button class="reviews-selector__dot-button reviews-selector__dot-button_third" option="2"></button>
+                </div>
+            </amp-selector>
         </div>
         <div class="reviews reviews_desktop">
             <div class="reviews__title">Reviews from our happy clients</div>
@@ -202,8 +214,8 @@
             </amp-carousel>
         </div>
         <div class="products products_mobile">
-            <amp-carousel id="products-carousel" height="502" layout="fixed-height" type="slides" role="region"
-                aria-label="Products carousel" autoplay delay="5000" loop controls>
+            <amp-carousel id="products-carousel" width="320px" height="502" layout="fixed" type="slides" role="region"
+                aria-label="Products carousel" autoplay delay="10000" controls>
                 <div class="product-card product-card_mobile">
                     <div class="product-card__pic">
                         <amp-img alt="Product 1" src="./img/product_1.jpg" width="369" height="246" layout="fixed">
