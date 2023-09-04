@@ -9,6 +9,50 @@
   border: none;
 }
 
+#services-carousel .amp-carousel-button-next {
+  right: 30px;
+  display: block;
+  width: 22px;
+  height: 49px;
+  border: none;
+  background-image: none;
+  background-color: #000000;
+  transition: background-color 0.2s;
+  mask: url("../img/arrow-right.svg");
+  -webkit-mask: url("../img/arrow-right.svg");
+}
+#services-carousel .amp-carousel-button-next:hover {
+  background-color: rgba(88, 98, 93, 0.8);
+}
+#services-carousel .amp-carousel-button-next:active {
+  background-color: #48544f;
+}
+#services-carousel .amp-carousel-button-next:focus {
+  background-color: #48544f;
+}
+
+#services-carousel .amp-carousel-button-prev {
+  left: 30px;
+  display: block;
+  width: 22px;
+  height: 49px;
+  border: none;
+  background-image: none;
+  background-color: #000000;
+  transition: background-color 0.2s;
+  mask: url("../img/arrow-left.svg");
+  -webkit-mask: url("../img/arrow-left.svg");
+}
+#services-carousel .amp-carousel-button-prev:hover {
+  background-color: rgba(88, 98, 93, 0.8);
+}
+#services-carousel .amp-carousel-button-prev:active {
+  background-color: #48544f;
+}
+#services-carousel .amp-carousel-button-prev:focus {
+  background-color: #48544f;
+}
+
 #reviews-carousel_desktop .amp-carousel-button {
   top: 247px;
 }
@@ -458,6 +502,113 @@ h6 {
   font-family: "Open Sans", sans-serif;
 }
 
+.services-and-video {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.services-and-video.services-and-video_mobile {
+  margin-top: 42px;
+}
+.services-and-video.services-and-video_mobile .services-and-video__container {
+  max-width: 320px;
+}
+.services-and-video.services-and-video_desktop {
+  display: none;
+  margin-top: 66px;
+  margin-bottom: 50px;
+}
+
+.video {
+  display: flex;
+  position: relative;
+}
+.video .video__absolute-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: calc(50% - 20px);
+}
+.video .video__absolute-content .video__play {
+  display: flex;
+}
+.video .video__absolute-content .video__title {
+  color: #fff;
+}
+.video .video__absolute-content .video__decoration-pic {
+  display: flex;
+}
+.video.video_mobile .video__pic {
+  display: flex;
+  width: 100%;
+}
+.video.video_mobile .video__absolute-content .video__title {
+  font-size: 18px;
+  letter-spacing: 1.8px;
+}
+.video.video_desktop {
+  margin-bottom: 40px;
+}
+.video.video_desktop .video__absolute-content .video__title {
+  font-size: 36px;
+  letter-spacing: 3.6px;
+}
+.video.video_desktop .video__absolute-content .video__decoration-pic {
+  margin-top: 20px;
+}
+
+.services-cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.service-card .service-card__pic {
+  height: 47px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.service-card.service-card_mobile {
+  justify-content: center;
+}
+.service-card.service-card_mobile .service-card__title {
+  font-size: 17px;
+  letter-spacing: 1.7px;
+  margin-bottom: 2px;
+}
+.service-card.service-card_mobile .service-card__description {
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  text-align: center;
+}
+.service-card.service-card_desktop .service-card__title {
+  font-size: 18px;
+  letter-spacing: 1.8px;
+}
+.service-card.service-card_desktop .service-card__vertical-line {
+  width: 190px;
+  height: 1px;
+  border: none;
+  background: rgb(106, 117, 113);
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+.service-card.service-card_desktop .service-card__description {
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+
 .reviews {
   width: 100%;
   background-color: rgba(142, 153, 147, 0.62);
@@ -896,6 +1047,12 @@ h6 {
     display: none;
   }
   .wrapper .landing_desktop {
+    display: flex;
+  }
+  .wrapper .services-and-video_mobile {
+    display: none;
+  }
+  .wrapper .services-and-video_desktop {
     display: flex;
   }
   .wrapper .products_mobile {

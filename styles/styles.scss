@@ -96,6 +96,21 @@ $arrow-right-sm: url('../img/arrow-right-sm.svg');
 	}
 }
 
+/// amp carousel arrows - services carousel ///
+// #services-carousel .amp-carousel-button {
+// 	top: 71%;
+// }
+
+#services-carousel .amp-carousel-button-next {
+	right: 30px;
+	@include arrow-right;
+}
+
+#services-carousel .amp-carousel-button-prev {
+	left: 30px;
+	@include arrow-left;
+}
+
 /// amp carousel arrows - reviews carousel ///
 #reviews-carousel_desktop .amp-carousel-button {
 	top: 247px;
@@ -515,6 +530,143 @@ h6 {
 
 	.nav-menu__item {
 		font-family: $open-sans;
+	}
+}
+
+.services-and-video {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&.services-and-video_mobile {
+		margin-top: 42px;
+
+		.services-and-video__container {
+			max-width: 320px;
+		}
+	}
+
+	&.services-and-video_desktop {
+		display: none;
+		margin-top: 66px;
+		margin-bottom: 50px;
+	}
+}
+
+.video {
+	display: flex;
+	position: relative;
+
+	.video__absolute-content {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		top: calc(50% - 20px);
+
+		.video__play {
+			display: flex;
+		}
+
+		.video__title {
+			color: #fff;
+		}
+
+		.video__decoration-pic {
+			display: flex;
+		}
+	}
+
+	&.video_mobile {
+		.video__pic {
+			display: flex;
+			width: 100%;
+		}
+
+		.video__absolute-content {
+			.video__title {
+				font-size: 18px;
+				letter-spacing: 1.8px;
+			}
+		}
+	}
+
+	&.video_desktop {
+		margin-bottom: 40px;
+
+		.video__absolute-content {
+			.video__title {
+				font-size: 36px;
+				letter-spacing: 3.6px;
+			}
+
+			.video__decoration-pic {
+				margin-top: 20px;
+			}
+		}
+	}
+}
+
+// .services-carousel {
+
+// }
+
+.services-cards {
+	display: flex;
+	justify-content: space-around;
+}
+
+.service-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.service-card__pic {
+		height: 47px;
+		display: flex;
+		align-items: center;
+		margin-bottom: 10px;
+	}
+
+	&.service-card_mobile {
+		justify-content: center;
+		.service-card__title {
+			font-size: 17px;
+			letter-spacing: 1.7px;
+			margin-bottom: 2px;
+		}
+
+		.service-card__description {
+			font-size: 14px;
+			letter-spacing: 1.4px;
+			text-align: center;
+		}
+	}
+
+	&.service-card_desktop {
+		.service-card__title {
+			font-size: 18px;
+			letter-spacing: 1.8px;
+		}
+
+		.service-card__vertical-line {
+			width: 190px;
+			height: 1px;
+			border: none;
+			background: rgba(106, 117, 113, 1);
+			margin-top: 4px;
+			margin-bottom: 8px;
+		}
+
+		.service-card__description {
+			font-size: 15px;
+			letter-spacing: 1.5px;
+			text-align: center;
+		}
 	}
 }
 
@@ -1110,6 +1262,14 @@ h6 {
 		}
 
 		.landing_desktop {
+			display: flex;
+		}
+
+		.services-and-video_mobile {
+			display: none;
+		}
+
+		.services-and-video_desktop {
 			display: flex;
 		}
 
