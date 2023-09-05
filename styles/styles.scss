@@ -369,6 +369,7 @@ h6 {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	position: relative;
 
 	&.header_mobile {
 		.header-mobile__hamgurger {
@@ -380,7 +381,7 @@ h6 {
 		.header__nav-menu {
 			width: 640px;
 			position: absolute;
-			left: 25%;
+			left: 23%;
 		}
 	}
 }
