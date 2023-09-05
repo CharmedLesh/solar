@@ -1222,8 +1222,7 @@ h6 {
 			border: 1px solid #227d4c;
 		}
 
-		//supported only by firefox and safari
-		&:user-invalid {
+		&.user-invalid {
 			border: 1px solid #f90000;
 		}
 	}

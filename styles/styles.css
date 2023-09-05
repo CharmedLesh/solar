@@ -1037,7 +1037,7 @@ h6 {
 .message-form .message-form__input:valid {
   border: 1px solid #227d4c;
 }
-.message-form .message-form__input:user-invalid {
+.message-form .message-form__input.user-invalid {
   border: 1px solid #f90000;
 }
 .message-form .message-form__submit {
