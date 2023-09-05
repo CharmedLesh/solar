@@ -962,23 +962,6 @@ h6 {
 		justify-content: space-between;
 		position: relative;
 		background-color: #fdfdfd;
-
-		.products__split-line {
-			height: 528.94px;
-			width: 1px;
-			border: none;
-			background: black;
-			position: absolute;
-			top: 120px;
-
-			&.products__split-line_first {
-				left: 438.75px;
-			}
-
-			&.products__split-line_second {
-				right: 438.75px;
-			}
-		}
 	}
 }
 
@@ -1060,6 +1043,21 @@ h6 {
 				max-width: 292px;
 				font-size: 15px;
 				letter-spacing: 1.5px;
+			}
+		}
+
+		&:not(:last-child) {
+			position: relative;
+
+			&::after {
+				content: '';
+				color: black;
+				background: black;
+				height: 100%;
+				width: 1px;
+				position: absolute;
+				top: 60px;
+				right: -7.5px;
 			}
 		}
 	}
