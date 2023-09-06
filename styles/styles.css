@@ -917,19 +917,8 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-.info.info_mobile .info__card-wrapper {
   flex-direction: column;
   padding: 27px 0px;
-}
-.info.info_desktop {
-  display: none;
-}
-.info.info_desktop .info__card-wrapper {
-  width: 992px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .info-card {
@@ -939,38 +928,26 @@ h6 {
 }
 .info-card .info-card__pic {
   display: flex;
+  margin-bottom: 7px;
 }
 .info-card .info-card__title {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   text-align: center;
+  font-size: 12px;
+  letter-spacing: 1.2px;
 }
 .info-card .info-card__details {
   font-family: "Open Sans", sans-serif;
   text-align: center;
-}
-.info-card.info-card_mobile .info-card__pic {
-  margin-bottom: 7px;
-}
-.info-card.info-card_mobile .info-card__title {
   font-size: 12px;
   letter-spacing: 1.2px;
+  display: flex;
 }
-.info-card.info-card_mobile .info-card__details {
-  font-size: 12px;
-  letter-spacing: 1.2px;
-}
-.info-card.info-card_desktop .info-card__pic {
-  margin-bottom: 23px;
-}
-.info-card.info-card_desktop .info-card__title {
-  font-size: 22px;
-  letter-spacing: 2.2px;
-  margin-bottom: 30px;
-}
-.info-card.info-card_desktop .info-card__details {
-  font-size: 22px;
-  letter-spacing: 2.2px;
+.info-card .info-card__details .info-card__text-separator {
+  font-family: inherit;
+  font-size: inherit;
+  letter-spacing: inherit;
 }
 
 .message {
@@ -1101,6 +1078,24 @@ h6 {
 }
 
 @media (min-width: 1280px) {
+  .info .info__card-wrapper {
+    width: 992px;
+    flex-direction: row;
+  }
+  .info-card .info-card__pic {
+    margin-bottom: 23px;
+  }
+  .info-card .info-card__title {
+    font-size: 22px;
+    letter-spacing: 2.2px;
+    margin-bottom: 30px;
+  }
+  .info-card .info-card__details {
+    font-size: 22px;
+    letter-spacing: 2.2px;
+    flex-direction: column;
+    align-items: center;
+  }
   .message {
     padding: 107px 90px 38px 0px;
   }
@@ -1207,12 +1202,6 @@ h6 {
     display: block;
   }
   .wrapper .products_desktop {
-    display: flex;
-  }
-  .wrapper .info_mobile {
-    display: none;
-  }
-  .wrapper .info_desktop {
     display: flex;
   }
 }/*# sourceMappingURL=styles.css.map */

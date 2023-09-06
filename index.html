@@ -1053,22 +1053,8 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-        }
-
-        .info.info_mobile .info__card-wrapper {
             flex-direction: column;
             padding: 27px 0px;
-        }
-
-        .info.info_desktop {
-            display: none;
-        }
-
-        .info.info_desktop .info__card-wrapper {
-            width: 992px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
         }
 
         .info-card {
@@ -1079,46 +1065,29 @@
 
         .info-card .info-card__pic {
             display: flex;
+            margin-bottom: 7px;
         }
 
         .info-card .info-card__title {
             font-family: "Open Sans", sans-serif;
             font-weight: 700;
             text-align: center;
+            font-size: 12px;
+            letter-spacing: 1.2px;
         }
 
         .info-card .info-card__details {
             font-family: "Open Sans", sans-serif;
             text-align: center;
-        }
-
-        .info-card.info-card_mobile .info-card__pic {
-            margin-bottom: 7px;
-        }
-
-        .info-card.info-card_mobile .info-card__title {
             font-size: 12px;
             letter-spacing: 1.2px;
+            display: flex;
         }
 
-        .info-card.info-card_mobile .info-card__details {
-            font-size: 12px;
-            letter-spacing: 1.2px;
-        }
-
-        .info-card.info-card_desktop .info-card__pic {
-            margin-bottom: 23px;
-        }
-
-        .info-card.info-card_desktop .info-card__title {
-            font-size: 22px;
-            letter-spacing: 2.2px;
-            margin-bottom: 30px;
-        }
-
-        .info-card.info-card_desktop .info-card__details {
-            font-size: 22px;
-            letter-spacing: 2.2px;
+        .info-card .info-card__details .info-card__text-separator {
+            font-family: inherit;
+            font-size: inherit;
+            letter-spacing: inherit;
         }
 
         .message {
@@ -1273,6 +1242,28 @@
         }
 
         @media (min-width: 1280px) {
+            .info .info__card-wrapper {
+                width: 992px;
+                flex-direction: row;
+            }
+
+            .info-card .info-card__pic {
+                margin-bottom: 23px;
+            }
+
+            .info-card .info-card__title {
+                font-size: 22px;
+                letter-spacing: 2.2px;
+                margin-bottom: 30px;
+            }
+
+            .info-card .info-card__details {
+                font-size: 22px;
+                letter-spacing: 2.2px;
+                flex-direction: column;
+                align-items: center;
+            }
+
             .message {
                 padding: 107px 90px 38px 0px;
             }
@@ -1405,14 +1396,6 @@
             }
 
             .wrapper .products_desktop {
-                display: flex;
-            }
-
-            .wrapper .info_mobile {
-                display: none;
-            }
-
-            .wrapper .info_desktop {
                 display: flex;
             }
         }
@@ -2670,9 +2653,9 @@
                 </div>
             </div>
         </div>
-        <div class="info info_mobile">
+        <div class="info">
             <div class="info__card-wrapper">
-                <div class="info-card info-card_mobile">
+                <div class="info-card">
                     <div class="info-card__pic">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="44" viewBox="0 0 43 63" fill="none">
                             <g clip-path="url(#clip0_106_104)">
@@ -2691,7 +2674,7 @@
                     <div class="info-card__title">Contacts</div>
                     <div class="info-card__details">T: 096 788 98 76<br />info@solar.com</div>
                 </div>
-                <div class="info-card info-card_mobile">
+                <div class="info-card">
                     <div class="info-card__pic">
                         <svg xmlns="http://www.w3.org/2000/svg" width="36.562" height="45" viewBox="0 0 52 64"
                             fill="none">
@@ -2706,7 +2689,7 @@
                     <div class="info-card__title">Working Hours</div>
                     <div class="info-card__details">Mon-Fri: 8:00am - 11:30pm<br />Sat: 9:00am - 10:00pm</div>
                 </div>
-                <div class="info-card info-card_mobile">
+                <div class="info-card">
                     <div class="info-card__pic">
                         <svg xmlns="http://www.w3.org/2000/svg" width="38" height="47" viewBox="0 0 50 62" fill="none">
                             <g clip-path="url(#clip0_106_109)">
@@ -2720,60 +2703,10 @@
                         </svg>
                     </div>
                     <div class="info-card__title">Location</div>
-                    <div class="info-card__details">Hlyniana St, 28, Odesa</div>
-                </div>
-            </div>
-        </div>
-        <div class="info info_desktop">
-            <div class="info__card-wrapper">
-                <div class="info-card info-card_desktop">
-                    <div class="info-card__pic">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="43" height="63" viewBox="0 0 43 63" fill="none">
-                            <g clip-path="url(#clip0_106_104)">
-                                <path
-                                    d="M35.1818 0H7.81818C3.49864 0 0 3.52406 0 7.875V55.125C0 59.4759 3.49864 63 7.81818 63H35.1818C39.5014 63 43 59.4759 43 55.125V7.875C43 3.52406 39.5014 0 35.1818 0ZM39.0909 55.125C39.0909 57.2906 37.3318 59.0625 35.1818 59.0625H7.81818C5.66818 59.0625 3.90909 57.2906 3.90909 55.125V7.875C3.90909 5.70937 5.66818 3.9375 7.81818 3.9375H35.1818C37.3318 3.9375 39.0909 5.70937 39.0909 7.875V55.125Z"
-                                    fill="black" />
-                                <path
-                                    d="M17.5909 9.84375H25.4091C26.4841 9.84375 27.3636 8.95781 27.3636 7.875C27.3636 6.79219 26.4841 5.90625 25.4091 5.90625H17.5909C16.5159 5.90625 15.6364 6.79219 15.6364 7.875C15.6364 8.95781 16.5159 9.84375 17.5909 9.84375Z"
-                                    fill="black" />
-                                <path
-                                    d="M21.5001 57.0938C23.1193 57.0938 24.4319 55.7716 24.4319 54.1406C24.4319 52.5097 23.1193 51.1875 21.5001 51.1875C19.8809 51.1875 18.5682 52.5097 18.5682 54.1406C18.5682 55.7716 19.8809 57.0938 21.5001 57.0938Z"
-                                    fill="black" />
-                            </g>
-                        </svg>
+                    <div class="info-card__details">
+                        <div class="info-card__text-separator">Hlyniana St, 28,</div>
+                        <div class="info-card__text-separator">Odesa</div>
                     </div>
-                    <div class="info-card__title">Contacts</div>
-                    <div class="info-card__details">T: 096 788 98 76<br />info@solar.com</div>
-                </div>
-                <div class="info-card info-card_desktop">
-                    <div class="info-card__pic">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="52" height="64" viewBox="0 0 52 64" fill="none">
-                            <path
-                                d="M25.6183 29.4771C33.7768 29.4771 40.3982 22.8742 40.3982 14.7385C40.3982 6.60286 33.7768 0 25.6183 0C17.4599 0 10.8385 6.60286 10.8385 14.7385C10.8385 22.8742 17.4599 29.4771 25.6183 29.4771ZM25.6183 3.93027C31.5894 3.93027 36.4569 8.78416 36.4569 14.7385C36.4569 20.6929 31.5894 25.5468 25.6183 25.5468C19.6473 25.5468 14.7798 20.6929 14.7798 14.7385C14.7798 8.78416 19.6473 3.93027 25.6183 3.93027Z"
-                                fill="black" />
-                            <path
-                                d="M25.6183 31.2649C11.4888 31.2649 0 42.7217 0 56.8119V61.0959C0 62.1767 0.886788 63.061 1.97064 63.061C3.05449 63.061 3.94128 62.1767 3.94128 61.0959V56.8119C3.94128 44.8834 13.6565 35.1952 25.6183 35.1952C37.5801 35.1952 47.2954 44.8834 47.2954 56.8119V61.0959C47.2954 62.1767 48.1821 63.061 49.266 63.061C50.3498 63.061 51.2366 62.1767 51.2366 61.0959V56.8119C51.2366 42.7217 39.7478 31.2649 25.6183 31.2649Z"
-                                fill="black" />
-                        </svg>
-                    </div>
-                    <div class="info-card__title">Working Hours</div>
-                    <div class="info-card__details">Mon-Fri: 8:00am - 11:30pm<br />Sat: 9:00am - 10:00pm</div>
-                </div>
-                <div class="info-card info-card_desktop">
-                    <div class="info-card__pic">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="62" viewBox="0 0 50 62" fill="none">
-                            <g clip-path="url(#clip0_106_109)">
-                                <path
-                                    d="M25 0C11.2115 0 0 11.1665 0 24.8996C0 36.7365 12.8846 50.9484 23.7115 60.7933L25.0385 62L26.3462 60.755C38.3077 49.2821 50 37.0621 50 24.8996C50 11.1665 38.7885 0 25 0ZM24.9615 56.7328C11.3269 44.0531 3.84615 32.7909 3.84615 24.8996C3.84615 13.2734 13.3269 3.83071 25 3.83071C36.6731 3.83071 46.1538 13.2734 46.1538 24.8996C46.1538 35.1467 35.8846 46.2175 24.9615 56.7328Z"
-                                    fill="black" />
-                                <path
-                                    d="M25 15.3228C19.6923 15.3228 15.3846 19.6131 15.3846 24.8995C15.3846 30.1859 19.6923 34.4763 25 34.4763C30.3077 34.4763 34.6154 30.1859 34.6154 24.8995C34.6154 19.6131 30.3077 15.3228 25 15.3228ZM25 30.6456C21.827 30.6456 19.2308 28.0599 19.2308 24.8995C19.2308 21.7392 21.827 19.1535 25 19.1535C28.1731 19.1535 30.7693 21.7392 30.7693 24.8995C30.7693 28.0599 28.1731 30.6456 25 30.6456Z"
-                                    fill="black" />
-                            </g>
-                        </svg>
-                    </div>
-                    <div class="info-card__title">Location</div>
-                    <div class="info-card__details">Hlyniana St, 28,<br />Odesa</div>
                 </div>
             </div>
         </div>
