@@ -137,11 +137,11 @@
             display: none;
         }
 
-        #products-carousel .amp-carousel-button {
+        #products-slider__slider .amp-carousel-button {
             top: 71%;
         }
 
-        #products-carousel .amp-carousel-button-next {
+        #products-slider__slider .amp-carousel-button-next {
             right: 30px;
             display: block;
             width: 22px;
@@ -154,19 +154,19 @@
             -webkit-mask: url("../img/arrow-right.svg");
         }
 
-        #products-carousel .amp-carousel-button-next:hover {
+        #products-slider__slider .amp-carousel-button-next:hover {
             background-color: rgba(88, 98, 93, 0.8);
         }
 
-        #products-carousel .amp-carousel-button-next:active {
+        #products-slider__slider .amp-carousel-button-next:active {
             background-color: #48544f;
         }
 
-        #products-carousel .amp-carousel-button-next:focus {
+        #products-slider__slider .amp-carousel-button-next:focus {
             background-color: #48544f;
         }
 
-        #products-carousel .amp-carousel-button-prev {
+        #products-slider__slider .amp-carousel-button-prev {
             left: 30px;
             display: block;
             width: 22px;
@@ -179,15 +179,15 @@
             -webkit-mask: url("../img/arrow-left.svg");
         }
 
-        #products-carousel .amp-carousel-button-prev:hover {
+        #products-slider__slider .amp-carousel-button-prev:hover {
             background-color: rgba(88, 98, 93, 0.8);
         }
 
-        #products-carousel .amp-carousel-button-prev:active {
+        #products-slider__slider .amp-carousel-button-prev:active {
             background-color: #48544f;
         }
 
-        #products-carousel .amp-carousel-button-prev:focus {
+        #products-slider__slider .amp-carousel-button-prev:focus {
             background-color: #48544f;
         }
 
@@ -927,50 +927,29 @@
             letter-spacing: 2.2px;
         }
 
-        .products {
+        .products-slider {
             width: 100%;
-        }
-
-        .products.products_mobile {
             display: flex;
             justify-content: center;
             overflow: hidden;
         }
 
-        .products.products_desktop {
+        .products-cards-row {
             display: none;
+            width: 100%;
             padding: 45px 45px 130px;
             justify-content: space-between;
             position: relative;
             background-color: #fdfdfd;
         }
 
-        .product-card .product-card__content {
+        .product-card {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
-        .product-card .product-card__title {
-            text-align: center;
-        }
-
-        .product-card .product-card__decoration-pic {
-            display: flex;
-            padding: 5px 0px;
-        }
-
-        .product-card .product-card__description {
-            text-align: center;
-        }
-
-        .product-card.product-card_mobile {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .product-card.product-card_mobile .product-card__pic {
+        .product-card .product-card__pic {
             height: 294px;
             width: 385px;
             display: flex;
@@ -978,67 +957,28 @@
             justify-content: center;
         }
 
-        .product-card.product-card_mobile .product-card__content {
+        .product-card .product-card__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             margin-top: 12px;
         }
 
-        .product-card.product-card_mobile .product-card__content .product-card__title {
+        .product-card .product-card__content .product-card__title {
+            text-align: center;
             font-size: 16px;
             letter-spacing: 1.04px;
         }
 
-        .product-card.product-card_mobile .product-card__content .product-card__description {
+        .product-card .product-card__content .product-card__decoration-pic {
+            display: flex;
+            padding: 5px 0px;
+        }
+
+        .product-card .product-card__content .product-card__description {
+            text-align: center;
             font-size: 14px;
             letter-spacing: 1.4px;
-        }
-
-        .product-card.product-card_desktop .product-card__pic {
-            width: 385px;
-            height: 294px;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-
-        .product-card.product-card_desktop .product-card__pic.product-card__pic_1 {
-            background-image: url("../img/product_1.jpg");
-        }
-
-        .product-card.product-card_desktop .product-card__pic.product-card__pic_2 {
-            background-image: url("../img/product_2.jpg");
-        }
-
-        .product-card.product-card_desktop .product-card__pic.product-card__pic_3 {
-            background-image: url("../img/product_3.jpg");
-        }
-
-        .product-card.product-card_desktop .product-card__content {
-            margin-top: 55px;
-        }
-
-        .product-card.product-card_desktop .product-card__content .product-card__title {
-            font-size: 23px;
-            letter-spacing: 1.495px;
-        }
-
-        .product-card.product-card_desktop .product-card__content .product-card__description {
-            max-width: 292px;
-            font-size: 15px;
-            letter-spacing: 1.5px;
-        }
-
-        .product-card.product-card_desktop:not(:last-child) {
-            position: relative;
-        }
-
-        .product-card.product-card_desktop:not(:last-child)::after {
-            content: "";
-            color: black;
-            background: black;
-            height: 100%;
-            width: 1px;
-            position: absolute;
-            top: 60px;
-            right: -7.5px;
         }
 
         .info {
@@ -1242,6 +1182,44 @@
         }
 
         @media (min-width: 1280px) {
+            .products-slider {
+                display: none;
+            }
+
+            .products-cards-row {
+                display: flex;
+            }
+
+            .product-card .product-card__content {
+                margin-top: 55px;
+            }
+
+            .product-card .product-card__content .product-card__title {
+                font-size: 23px;
+                letter-spacing: 1.495px;
+            }
+
+            .product-card .product-card__content .product-card__description {
+                max-width: 292px;
+                font-size: 15px;
+                letter-spacing: 1.5px;
+            }
+
+            .product-card:not(:last-child) {
+                position: relative;
+            }
+
+            .product-card:not(:last-child)::after {
+                content: "";
+                color: black;
+                background: black;
+                height: 100%;
+                width: 1px;
+                position: absolute;
+                top: 60px;
+                right: -7.5px;
+            }
+
             .info .info__card-wrapper {
                 width: 992px;
                 flex-direction: row;
@@ -2487,10 +2465,10 @@
                 </div>
             </amp-carousel>
         </div>
-        <div class="products products_mobile">
-            <amp-carousel id="products-carousel" width="320px" height="502" layout="fixed" type="slides" role="region"
-                aria-label="Products carousel" autoplay delay="10000" controls>
-                <div class="product-card product-card_mobile">
+        <div class="products-slider">
+            <amp-carousel id="products-slider__slider" width="320px" height="502" layout="fixed" type="slides"
+                role="region" aria-label="Products slider" autoplay delay="10000" controls>
+                <div class="product-card">
                     <div class="product-card__pic">
                         <amp-img alt="Product 1" src="./img/product_1.jpg" width="369" height="246" layout="fixed">
                         </amp-img>
@@ -2518,7 +2496,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="product-card product-card_mobile">
+                <div class="product-card">
                     <div class="product-card__pic">
                         <amp-img alt="Product 2" src="./img/product_2.jpg" width="381" height="294" layout="fixed">
                         </amp-img>
@@ -2546,7 +2524,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="product-card product-card_mobile">
+                <div class="product-card">
                     <div class="product-card__pic">
                         <amp-img alt="Product 3" src="./img/product_3.jpg" width="385" height="240" layout="fixed">
                         </amp-img>
@@ -2576,9 +2554,12 @@
                 </div>
             </amp-carousel>
         </div>
-        <div class="products products_desktop">
-            <div class="product-card product-card_desktop">
-                <div class="product-card__pic product-card__pic_1"></div>
+        <div class="products-cards-row">
+            <div class="product-card">
+                <div class="product-card__pic">
+                    <amp-img alt="Product 1" src="./img/product_1.jpg" width="369" height="246" layout="fixed">
+                    </amp-img>
+                </div>
                 <div class="product-card__content">
                     <div class="product-card__title">
                         Great<br />Gift Packages
@@ -2602,8 +2583,11 @@
                     </div>
                 </div>
             </div>
-            <div class="product-card product-card_desktop">
-                <div class="product-card__pic product-card__pic_2"></div>
+            <div class="product-card">
+                <div class="product-card__pic">
+                    <amp-img alt="Product 2" src="./img/product_2.jpg" width="381" height="294" layout="fixed">
+                    </amp-img>
+                </div>
                 <div class="product-card__content">
                     <div class="product-card__title">
                         Shop<br />Beauty Products
@@ -2627,8 +2611,11 @@
                     </div>
                 </div>
             </div>
-            <div class="product-card product-card_desktop">
-                <div class="product-card__pic product-card__pic_3"></div>
+            <div class="product-card">
+                <div class="product-card__pic">
+                    <amp-img alt="Product 3" src="./img/product_3.jpg" width="385" height="240" layout="fixed">
+                    </amp-img>
+                </div>
                 <div class="product-card__content">
                     <div class="product-card__title">
                         Speacial<br />Offers & Deals
