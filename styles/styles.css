@@ -977,51 +977,47 @@ h6 {
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  padding: 22px 16px 18px 0px;
 }
 .message .message__content {
-  display: flex;
-  flex-direction: column;
+  width: 223px;
 }
 .message .message__content .message__title {
   text-align: center;
+  font-size: 10px;
+  letter-spacing: 0.4px;
 }
-.message.message_mobile {
+.message.message_bg {
   background-image: url("../img/message.jpg");
   background-size: auto 100%;
   background-position-x: 72%;
   background-repeat: no-repeat;
-  padding: 22px 16px 18px 0px;
-}
-.message.message_mobile .message__content {
-  width: 75.33%;
-}
-.message.message_mobile .message__content .message__title {
-  font-size: 10px;
-  letter-spacing: 0.4px;
-}
-.message.message_desktop {
-  display: none;
-  background-image: url("../img/message.jpg");
-  padding: 107px 90px 38px 0px;
-}
-.message.message_desktop .message__content {
-  width: 33.614%;
-}
-.message.message_desktop .message__content .message__title {
-  font-size: 16px;
-  letter-spacing: 0.64px;
-  padding: 0px 30px;
 }
 
 .message-form {
   display: flex;
   flex-direction: column;
 }
+.message-form .message-form__label {
+  font-size: 12px;
+  letter-spacing: 0.48px;
+  margin-bottom: 3px;
+  margin-top: 8px;
+}
+.message-form .message-form__label.message-form__label_name {
+  margin-top: 0px;
+}
 .message-form .message-form__input {
   border: 1px solid #8e9993;
   background: #fff;
   color: rgba(0, 0, 0, 0.51);
   font-family: "Prata", serif;
+  font-size: 10px;
+  letter-spacing: 0.4px;
+  padding: 6px;
+}
+.message-form .message-form__input.message-form__input_textarea {
+  height: 81px;
 }
 .message-form .message-form__input:focus {
   color: #000;
@@ -1046,6 +1042,11 @@ h6 {
   border: none;
   color: #fff;
   font-family: "Prata", serif;
+  font-size: 14px;
+  letter-spacing: 0.56px;
+  margin-top: 25px;
+  padding: 6px;
+  line-height: 17px;
 }
 .message-form .message-form__submit:hover {
   background-color: #48544f;
@@ -1058,53 +1059,6 @@ h6 {
 .message-form .message-form__submit:disabled {
   background-color: rgba(142, 153, 147, 0.4);
   color: rgba(255, 255, 255, 0.5098039216);
-}
-.message-form.message-form_mobile .message-form__label {
-  font-size: 12px;
-  letter-spacing: 0.48px;
-  margin-bottom: 3px;
-  margin-top: 8px;
-}
-.message-form.message-form_mobile .message-form__label.message-form__label_name {
-  margin-top: 0px;
-}
-.message-form.message-form_mobile .message-form__input {
-  font-size: 10px;
-  letter-spacing: 0.4px;
-  padding: 6px;
-}
-.message-form.message-form_mobile .message-form__input.message-form__input_textarea {
-  height: 81px;
-}
-.message-form.message-form_mobile .message-form__submit {
-  font-size: 14px;
-  letter-spacing: 0.56px;
-  margin-top: 25px;
-  padding: 6px;
-  line-height: 17px;
-}
-.message-form.message-form_desktop .message-form__label {
-  font-size: 16px;
-  letter-spacing: 0.64px;
-  margin-bottom: 7px;
-  margin-top: 21px;
-}
-.message-form.message-form_desktop .message-form__input {
-  font-size: 14px;
-  letter-spacing: 0.56px;
-  padding: 10px;
-  height: 41px;
-}
-.message-form.message-form_desktop .message-form__input.message-form__input_textarea {
-  height: 152px;
-}
-.message-form.message-form_desktop .message-form__submit {
-  width: 50%;
-  align-self: flex-end;
-  font-size: 16px;
-  letter-spacing: 0.64px;
-  height: 56px;
-  margin-top: 38px;
 }
 
 .media {
@@ -1147,6 +1101,43 @@ h6 {
 }
 
 @media (min-width: 1280px) {
+  .message {
+    padding: 107px 90px 38px 0px;
+  }
+  .message .message__content {
+    width: 33.614%;
+  }
+  .message .message__content .message__title {
+    font-size: 16px;
+    letter-spacing: 0.64px;
+    padding: 0px 30px 20px;
+  }
+  .message.message_bg {
+    background-position-x: 0%;
+  }
+  .message-form .message-form__label {
+    font-size: 16px;
+    letter-spacing: 0.64px;
+    margin-bottom: 7px;
+    margin-top: 21px;
+  }
+  .message-form .message-form__input {
+    font-size: 14px;
+    letter-spacing: 0.56px;
+    padding: 10px;
+    height: 41px;
+  }
+  .message-form .message-form__input.message-form__input_textarea {
+    height: 152px;
+  }
+  .message-form .message-form__submit {
+    width: 50%;
+    align-self: flex-end;
+    font-size: 16px;
+    letter-spacing: 0.64px;
+    height: 56px;
+    margin-top: 38px;
+  }
   .footer {
     display: flex;
     flex-direction: row-reverse;
@@ -1222,12 +1213,6 @@ h6 {
     display: none;
   }
   .wrapper .info_desktop {
-    display: flex;
-  }
-  .wrapper .message_mobile {
-    display: none;
-  }
-  .wrapper .message_desktop {
     display: flex;
   }
 }/*# sourceMappingURL=styles.css.map */
