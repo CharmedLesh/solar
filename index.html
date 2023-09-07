@@ -14,6 +14,8 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <meta name="author" content="Viacheslav Matvieiev" />
     <style amp-custom>
+        @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Prata&display=swap");
+
         .amp-carousel-button {
             cursor: pointer;
             background-color: transparent;
@@ -79,62 +81,65 @@
             display: none;
         }
 
-        #reviews-carousel_desktop .amp-carousel-button {
-            top: 247px;
-        }
-
-        #reviews-carousel_desktop .amp-carousel-button-next {
-            right: 398px;
-            display: block;
-            height: 14px;
-            width: 28px;
-            border: none;
-            background-image: none;
-            background-color: #000000;
-            transition: background-color 0.2s;
-            mask: url("../img/arrow-right-sm.svg");
-            -webkit-mask: url("../img/arrow-right-sm.svg");
-        }
-
-        #reviews-carousel_desktop .amp-carousel-button-next:hover {
-            background-color: #6a7571;
-        }
-
-        #reviews-carousel_desktop .amp-carousel-button-next:active {
-            background-color: #55605c;
-        }
-
-        #reviews-carousel_desktop .amp-carousel-button-next:focus {
-            background-color: #55605c;
-        }
-
-        #reviews-carousel_desktop .amp-carousel-button-prev {
-            left: 398px;
-            display: block;
-            height: 14px;
-            width: 28px;
-            border: none;
-            background-image: none;
-            background-color: #000000;
-            transition: background-color 0.2s;
-            mask: url("../img/arrow-left-sm.svg");
-            -webkit-mask: url("../img/arrow-left-sm.svg");
-        }
-
-        #reviews-carousel_desktop .amp-carousel-button-prev:hover {
-            background-color: #6a7571;
-        }
-
-        #reviews-carousel_desktop .amp-carousel-button-prev:active {
-            background-color: #55605c;
-        }
-
-        #reviews-carousel_desktop .amp-carousel-button-prev:focus {
-            background-color: #55605c;
-        }
-
-        #reviews-carousel_mobile .amp-carousel-button {
+        #reviews-slider__slider .amp-carousel-button {
             display: none;
+        }
+
+        @media (min-width: 1280px) {
+            #reviews-slider__slider .amp-carousel-button {
+                display: flex;
+                top: 247px;
+            }
+
+            #reviews-slider__slider .amp-carousel-button-next {
+                right: calc(50% - 42px);
+                display: block;
+                height: 14px;
+                width: 28px;
+                border: none;
+                background-image: none;
+                background-color: #000000;
+                transition: background-color 0.2s;
+                mask: url("../img/arrow-right-sm.svg");
+                -webkit-mask: url("../img/arrow-right-sm.svg");
+            }
+
+            #reviews-slider__slider .amp-carousel-button-next:hover {
+                background-color: #6a7571;
+            }
+
+            #reviews-slider__slider .amp-carousel-button-next:active {
+                background-color: #55605c;
+            }
+
+            #reviews-slider__slider .amp-carousel-button-next:focus {
+                background-color: #55605c;
+            }
+
+            #reviews-slider__slider .amp-carousel-button-prev {
+                left: calc(50% - 42px);
+                display: block;
+                height: 14px;
+                width: 28px;
+                border: none;
+                background-image: none;
+                background-color: #000000;
+                transition: background-color 0.2s;
+                mask: url("../img/arrow-left-sm.svg");
+                -webkit-mask: url("../img/arrow-left-sm.svg");
+            }
+
+            #reviews-slider__slider .amp-carousel-button-prev:hover {
+                background-color: #6a7571;
+            }
+
+            #reviews-slider__slider .amp-carousel-button-prev:active {
+                background-color: #55605c;
+            }
+
+            #reviews-slider__slider .amp-carousel-button-prev:focus {
+                background-color: #55605c;
+            }
         }
 
         #products-slider__slider .amp-carousel-button {
@@ -852,17 +857,9 @@
             background-color: #6a7571;
         }
 
-        .reviews {
+        .reviews-slider {
             width: 100%;
             background-color: rgba(142, 153, 147, 0.62);
-        }
-
-        .reviews .reviews__title {
-            text-align: center;
-            min-width: 290px;
-        }
-
-        .reviews.reviews_mobile {
             padding: 18px 15px 0px 15px;
             display: flex;
             flex-direction: column;
@@ -870,61 +867,41 @@
             position: relative;
         }
 
-        .reviews.reviews_mobile .reviews__title {
+        .reviews-slider .reviews__title {
+            text-align: center;
             font-size: 12px;
             margin-bottom: 14px;
             letter-spacing: 0.78px;
         }
 
-        .reviews.reviews_mobile .reviews__selector {
+        .reviews-slider .reviews__slider-wrapper {
+            width: 98.621%;
+            height: 93px;
+        }
+
+        .reviews-slider .reviews__slider-wrapper .reviews-slider__slider {
+            height: 64px;
+        }
+
+        .reviews-slider .reviews-slider__dots-selector {
             position: absolute;
             bottom: 12px;
             display: flex;
             left: calc(50% - 12.5px);
         }
 
-        .reviews.reviews_desktop {
-            display: none;
-            padding: 50px 200px 0px 200px;
-        }
-
-        .reviews.reviews_desktop .reviews__title {
-            font-size: 23px;
-            letter-spacing: 1.495px;
-            margin-bottom: 60px;
-        }
-
         .review-card .review-card__text {
             text-align: center;
-        }
-
-        .review-card .review-card__author {
-            text-align: center;
-        }
-
-        .review-card.review-card_mobile .review-card__text {
             font-size: 10px;
             letter-spacing: 1px;
             margin-bottom: 8px;
         }
 
-        .review-card.review-card_mobile .review-card__author {
+        .review-card .review-card__author {
+            text-align: center;
             font-family: "Open Sans", sans-serif;
             font-size: 11px;
             letter-spacing: 1.1px;
-        }
-
-        .review-card.review-card_desktop .review-card__text {
-            font-size: 30px;
-            letter-spacing: 3px;
-            margin-bottom: 36px;
-            max-height: 122.4px;
-        }
-
-        .review-card.review-card_desktop .review-card__author {
-            font-family: "Open Sans", sans-serif;
-            font-size: 22px;
-            letter-spacing: 2.2px;
         }
 
         .products-slider {
@@ -1182,6 +1159,41 @@
         }
 
         @media (min-width: 1280px) {
+            .reviews-slider {
+                padding: 50px 200px 0px 200px;
+            }
+
+            .reviews-slider .reviews__title {
+                font-size: 23px;
+                letter-spacing: 1.495px;
+                margin-bottom: 60px;
+            }
+
+            .reviews-slider .reviews__slider-wrapper {
+                width: 100%;
+                height: 338px;
+            }
+
+            .reviews-slider .reviews__slider-wrapper .reviews-slider__slider {
+                height: 338px;
+            }
+
+            .reviews-slider .reviews-slider__dots-selector {
+                display: none;
+            }
+
+            .review-card .review-card__text {
+                font-size: 30px;
+                letter-spacing: 3px;
+                margin-bottom: 36px;
+                max-height: 122.4px;
+            }
+
+            .review-card .review-card__author {
+                font-size: 22px;
+                letter-spacing: 2.2px;
+            }
+
             .products-slider {
                 display: none;
             }
@@ -1358,22 +1370,6 @@
             }
 
             .wrapper .menu_desktop {
-                display: flex;
-            }
-
-            .wrapper .products_mobile {
-                display: none;
-            }
-
-            .wrapper .reviews_mobile {
-                display: none;
-            }
-
-            .wrapper .reviews_desktop {
-                display: block;
-            }
-
-            .wrapper .products_desktop {
                 display: flex;
             }
         }
@@ -2401,69 +2397,44 @@
                 </div>
             </div>
         </div>
-        <div class="reviews reviews_mobile">
+        <div class="reviews-slider">
             <div class="reviews__title">Reviews from our happy clients</div>
-            <amp-carousel id="reviews-carousel_mobile" width="290" height="92" layout="fixed" type="slides"
-                aria-label="Reviews carousel"
-                on="slideChange: reviews-selector.toggle(index=event.index, value=true), reviews-selector__dots-container.goToSlide(index=event.index)">
-                <div class="review-card review-card_mobile">
-                    <div class="review-card__text">
-                        “This magic place helps me to deal with all my stress. Can’t wait to enjoy make my next spa
-                        program”
+            <div class="reviews__slider-wrapper">
+                <amp-carousel id="reviews-slider__slider" class="reviews-slider__slider" layout="flex-item"
+                    type="slides" loop controls aria-label="Reviews carousel"
+                    on="slideChange: reviews-slider__dots-selector.toggle(index=event.index, value=true), reviews-slider__dots-selector.goToSlide(index=event.index)">
+                    <div class="review-card">
+                        <div class="review-card__text">
+                            “This magic place helps me to deal with all my stress. Can’t wait to enjoy make my next spa
+                            program”
+                        </div>
+                        <div class="review-card__author">Anna</div>
                     </div>
-                    <div class="review-card__author">Anna</div>
-                </div>
-                <div class="review-card review-card_mobile">
-                    <div class="review-card__text">
-                        “Stress doesn't stand a chance when you step into this mystical spa haven. I'm
-                        practically daydreaming about my next visit.”
+                    <div class="review-card">
+                        <div class="review-card__text">
+                            “Stress doesn't stand a chance when you step into this mystical spa haven. I'm
+                            practically daydreaming about my next visit.”
+                        </div>
+                        <div class="review-card__author">Anastasia</div>
                     </div>
-                    <div class="review-card__author">Anastasia</div>
-                </div>
-                <div class="review-card review-card_mobile">
-                    <div class="review-card__text">
-                        “This enchanting oasis truly works wonders for my stress relief. I'm already looking forward to
-                        indulging in my next spa experience.”
+                    <div class="review-card">
+                        <div class="review-card__text">
+                            “This enchanting oasis truly works wonders for my stress relief. I'm already looking forward
+                            to
+                            indulging in my next spa experience.”
+                        </div>
+                        <div class="review-card__author">Maria</div>
                     </div>
-                    <div class="review-card__author">Maria</div>
-                </div>
-            </amp-carousel>
-            <amp-selector id="reviews-selector" class="dots-selector reviews__selector"
-                on="select:reviews-carousel_mobile.goToSlide(index=event.targetOption)" layout="container">
-                <div class="dots-selector__dots-container">
-                    <button class="dots-selector__dot-button dots-selector__dot-button_first" option="0"
-                        selected></button>
-                    <button class="dots-selector__dot-button dots-selector__dot-button_second" option="1"></button>
-                    <button class="dots-selector__dot-button dots-selector__dot-button_third" option="2"></button>
+                </amp-carousel>
+            </div>
+            <amp-selector id="reviews-slider__dots-selector" class="dots-selector reviews-slider__dots-selector"
+                on="select:reviews-slider__slider.goToSlide(index=event.targetOption)" layout="container">
+                <div class="dots-selector__dots-container" id="dots-selector__dots-container">
+                    <button class="dots-selector__dot-button" option="0" selected></button>
+                    <button class="dots-selector__dot-button" option="1"></button>
+                    <button class="dots-selector__dot-button" option="2"></button>
                 </div>
             </amp-selector>
-        </div>
-        <div class="reviews reviews_desktop">
-            <div class="reviews__title">Reviews from our happy clients</div>
-            <amp-carousel id="reviews-carousel_desktop" height="338" layout="fixed-height" type="slides"
-                aria-label="Reviews carousel" loop controls>
-                <div class="review-card review-card_desktop">
-                    <div class="review-card__text">
-                        “This magic place helps me to deal with all my stress. Can’t wait to enjoy make my next spa
-                        program”
-                    </div>
-                    <div class="review-card__author">Anna</div>
-                </div>
-                <div class="review-card review-card_desktop">
-                    <div class="review-card__text">
-                        “Stress doesn't stand a chance when you step into this mystical spa haven. I'm
-                        practically daydreaming about my next visit.”
-                    </div>
-                    <div class="review-card__author">Anastasia</div>
-                </div>
-                <div class="review-card review-card_desktop">
-                    <div class="review-card__text">
-                        “This enchanting oasis truly works wonders for my stress relief. I'm already looking forward to
-                        indulging in my next spa experience.”
-                    </div>
-                    <div class="review-card__author">Maria</div>
-                </div>
-            </amp-carousel>
         </div>
         <div class="products-slider">
             <amp-carousel id="products-slider__slider" width="320px" height="502" layout="fixed" type="slides"
