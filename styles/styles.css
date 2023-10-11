@@ -505,26 +505,28 @@ h6 {
 }
 
 .services-and-video {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.services-and-video.services-and-video_mobile {
-  margin-top: 42px;
-}
-.services-and-video.services-and-video_mobile .services-and-video__container {
+  margin-top: 61px;
   max-width: 320px;
 }
-.services-and-video.services-and-video_desktop {
-  display: none;
-  margin-top: 66px;
-  margin-bottom: 50px;
+@media (min-width: 1280px) {
+  .services-and-video {
+    margin-top: 92px;
+    margin-bottom: 97px;
+    max-width: none;
+  }
 }
 
 .video {
   display: flex;
   position: relative;
+}
+@media (min-width: 1280px) {
+  .video {
+    margin-bottom: 32px;
+  }
 }
 .video .video__absolute-content {
   position: absolute;
@@ -534,45 +536,93 @@ h6 {
   left: 0;
   right: 0;
   margin: 0 auto;
-  top: calc(50% - 20px);
+  top: calc(50% - 45px);
 }
-.video .video__absolute-content .video__play {
+@media (min-width: 1280px) {
+  .video .video__absolute-content {
+    top: calc(50% - 30px);
+  }
+}
+.video .video__play {
   display: flex;
 }
-.video .video__absolute-content .video__title {
+.video .video__play svg {
+  width: 24px;
+  height: 25px;
+}
+@media (min-width: 1280px) {
+  .video .video__play svg {
+    width: 38px;
+    height: 38px;
+  }
+}
+.video .video__title {
   color: #fff;
-}
-.video .video__absolute-content .video__decoration-pic {
-  display: flex;
-}
-.video.video_mobile .video__pic {
-  display: flex;
-  width: 100%;
-}
-.video.video_mobile .video__absolute-content .video__title {
   font-size: 18px;
   letter-spacing: 1.8px;
 }
-.video.video_desktop {
-  margin-bottom: 40px;
+@media (min-width: 1280px) {
+  .video .video__title {
+    font-size: 36px;
+    letter-spacing: 3.6px;
+  }
 }
-.video.video_desktop .video__absolute-content .video__title {
-  font-size: 36px;
-  letter-spacing: 3.6px;
+.video .video__decoration-pic {
+  display: flex;
+  margin-top: 5px;
 }
-.video.video_desktop .video__absolute-content .video__decoration-pic {
-  margin-top: 20px;
+.video .video__decoration-pic svg {
+  width: 41px;
+  height: 19px;
+}
+@media (min-width: 1280px) {
+  .video .video__decoration-pic svg {
+    width: 65px;
+    height: 30px;
+  }
+}
+.video .video__pic {
+  display: flex;
+  width: 100%;
 }
 
-.services-cards {
-  display: flex;
-  justify-content: space-around;
+.services-carousel {
+  width: 100%;
+  margin: 44px 0px 54px;
+}
+@media (min-width: 1280px) {
+  .services-carousel {
+    display: none;
+  }
+}
+
+.services-cards-list {
+  display: none;
+}
+@media (min-width: 1280px) {
+  .services-cards-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+  }
 }
 
 .service-card {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+@media (min-width: 1280px) {
+  .service-card .service-card__vertical-line {
+    width: 190px;
+    height: 1px;
+    border: none;
+    background: rgb(106, 117, 113);
+    margin-top: 4px;
+    margin-bottom: 8px;
+  }
 }
 .service-card .service-card__pic {
   height: 52px;
@@ -580,35 +630,27 @@ h6 {
   align-items: center;
   margin-bottom: 10px;
 }
-.service-card.service-card_mobile {
-  justify-content: center;
-}
-.service-card.service-card_mobile .service-card__title {
+.service-card .service-card__title {
   font-size: 17px;
   letter-spacing: 1.7px;
   margin-bottom: 2px;
 }
-.service-card.service-card_mobile .service-card__description {
+@media (min-width: 1280px) {
+  .service-card .service-card__title {
+    font-size: 18px;
+    letter-spacing: 1.8px;
+  }
+}
+.service-card .service-card__description {
   font-size: 14px;
   letter-spacing: 1.4px;
   text-align: center;
 }
-.service-card.service-card_desktop .service-card__title {
-  font-size: 18px;
-  letter-spacing: 1.8px;
-}
-.service-card.service-card_desktop .service-card__vertical-line {
-  width: 190px;
-  height: 1px;
-  border: none;
-  background: rgb(106, 117, 113);
-  margin-top: 4px;
-  margin-bottom: 8px;
-}
-.service-card.service-card_desktop .service-card__description {
-  font-size: 15px;
-  letter-spacing: 1.5px;
-  text-align: center;
+@media (min-width: 1280px) {
+  .service-card .service-card__description {
+    font-size: 15px;
+    letter-spacing: 1.5px;
+  }
 }
 
 .menu {
