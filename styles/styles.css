@@ -528,7 +528,7 @@ h6 {
     margin-bottom: 32px;
   }
 }
-.video .video__absolute-content {
+.video__absolute-content {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -536,52 +536,52 @@ h6 {
   left: 0;
   right: 0;
   margin: 0 auto;
-  top: calc(50% - 45px);
+  top: calc(50% - 20px);
 }
 @media (min-width: 1280px) {
-  .video .video__absolute-content {
+  .video__absolute-content {
     top: calc(50% - 30px);
   }
 }
-.video .video__play {
+.video__play {
   display: flex;
 }
-.video .video__play svg {
+.video__play svg {
   width: 24px;
   height: 25px;
 }
 @media (min-width: 1280px) {
-  .video .video__play svg {
+  .video__play svg {
     width: 38px;
     height: 38px;
   }
 }
-.video .video__title {
+.video__title {
   color: #fff;
   font-size: 18px;
   letter-spacing: 1.8px;
 }
 @media (min-width: 1280px) {
-  .video .video__title {
+  .video__title {
     font-size: 36px;
     letter-spacing: 3.6px;
   }
 }
-.video .video__decoration-pic {
+.video__decoration-pic {
   display: flex;
   margin-top: 5px;
 }
-.video .video__decoration-pic svg {
+.video__decoration-pic svg {
   width: 41px;
   height: 19px;
 }
 @media (min-width: 1280px) {
-  .video .video__decoration-pic svg {
+  .video__decoration-pic svg {
     width: 65px;
     height: 30px;
   }
 }
-.video .video__pic {
+.video__pic {
   display: flex;
   width: 100%;
 }

@@ -545,7 +545,7 @@ h6 {
 		margin-bottom: 32px;
 	}
 
-	.video__absolute-content {
+	&__absolute-content {
 		position: absolute;
 		display: flex;
 		flex-direction: column;
@@ -553,14 +553,14 @@ h6 {
 		left: 0;
 		right: 0;
 		margin: 0 auto;
-		top: calc(50% - 45px);
+		top: calc(50% - 20px);
 
 		@media (min-width: 1280px) {
 			top: calc(50% - 30px);
 		}
 	}
 
-	.video__play {
+	&__play {
 		display: flex;
 
 		svg {
@@ -574,7 +574,7 @@ h6 {
 		}
 	}
 
-	.video__title {
+	&__title {
 		color: #fff;
 		font-size: 18px;
 		letter-spacing: 1.8px;
@@ -585,7 +585,7 @@ h6 {
 		}
 	}
 
-	.video__decoration-pic {
+	&__decoration-pic {
 		display: flex;
 		margin-top: 5px;
 
@@ -600,7 +600,7 @@ h6 {
 		}
 	}
 
-	.video__pic {
+	&__pic {
 		display: flex;
 		width: 100%;
 	}
