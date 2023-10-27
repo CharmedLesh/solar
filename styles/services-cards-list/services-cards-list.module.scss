@@ -1,0 +1,10 @@
+.services-cards-list {
+	display: none;
+
+	@media (min-width: 1280px) {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		width: 100%;
+	}
+}

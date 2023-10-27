@@ -1,0 +1,17 @@
+.landing {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../img/landing.jpg");
+  background-size: cover;
+  background-position-x: 50%;
+  padding: 16px 24px;
+  height: 568px;
+}
+@media (min-width: 1280px) {
+  .landing {
+    padding: 40px 60px;
+    height: 720px;
+  }
+}/*# sourceMappingURL=landing.module.css.map */

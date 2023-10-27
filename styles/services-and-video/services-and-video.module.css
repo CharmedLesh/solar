@@ -1,0 +1,14 @@
+.services-and-video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 61px;
+  max-width: 320px;
+}
+@media (min-width: 1280px) {
+  .services-and-video {
+    margin-top: 92px;
+    margin-bottom: 97px;
+    max-width: none;
+  }
+}/*# sourceMappingURL=services-and-video.module.css.map */

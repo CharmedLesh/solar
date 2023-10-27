@@ -1,0 +1,19 @@
+.media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.media__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.media svg path {
+  fill: #231f20;
+}
+.media svg:hover path {
+  fill: #48544f;
+}
+.media svg:active path {
+  fill: #1b2622;
+}/*# sourceMappingURL=media.module.css.map */

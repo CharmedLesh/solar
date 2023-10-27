@@ -1,0 +1,30 @@
+.logo {
+	&__link {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__title {
+		line-height: 15px;
+		color: rgba(0, 0, 0, 0.8);
+		font-size: 11px;
+		letter-spacing: 1.1px;
+
+		@media (min-width: 1280px) {
+			font-size: 13px;
+			letter-spacing: 1.3px;
+		}
+	}
+
+	svg {
+		width: 37px;
+		height: 29px;
+
+		@media (min-width: 1280px) {
+			width: 62.16px;
+			height: 48px;
+		}
+	}
+}

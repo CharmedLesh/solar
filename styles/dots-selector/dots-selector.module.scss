@@ -1,0 +1,25 @@
+.dots-selector {
+	display: flex;
+	align-items: center;
+
+	&__dots-container {
+		display: flex;
+	}
+
+	&__dot-button {
+		width: 5px;
+		height: 5px;
+		border-radius: 10px;
+		display: inline-block;
+		background-color: rgba(106, 117, 113, 0.2);
+
+		&:nth-child(2) {
+			margin: 0px 5px;
+		}
+
+		&[option][selected] {
+			outline: none;
+			background-color: #6a7571;
+		}
+	}
+}

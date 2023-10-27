@@ -1,0 +1,283 @@
+@import './styles/styles.scss';
+@import './styles/action-block/action-block.module.scss';
+@import './styles/action-button/action-button.module.scss';
+@import './styles/dots-selector/dots-selector.module.scss';
+@import './styles/footer/footer.module.scss';
+@import './styles/header/header.module.scss';
+@import './styles/info-card/info-card.module.scss';
+@import './styles/info/info.module.scss';
+@import './styles/landing/landing.module.scss';
+@import './styles/logo/logo.module.scss';
+@import './styles/media/media.module.scss';
+@import './styles/menu/menu.module.scss';
+@import './styles/message-form/message-form.module.scss';
+@import './styles/message/message.module.scss';
+@import './styles/nav-menu/nav-menu.module.scss';
+@import './styles/price-list-item/price-list-item.module.scss';
+@import './styles/product-card/product-card.module.scss';
+@import './styles/products-cards-row/products-cards-row.module.scss';
+@import './styles/products-slider/products-slider.module.scss';
+@import './styles/review-card/review-card.module.scss';
+@import './styles/reviews-slider/reviews-slider.module.scss';
+@import './styles/service-card/service-card.module.scss';
+@import './styles/services-and-video/services-and-video.module.scss';
+@import './styles/services-cards-list/services-cards-list.module.scss';
+@import './styles/services-carousel/services-carousel.module.scss';
+@import './styles/subtitle/subtitle.module.scss';
+@import './styles/title/title.module.scss';
+@import './styles/video/video.module.scss';
+@import './styles/wrapper/wrapper.module.scss';
+
+/// amp carousel arrows ///
+.amp-carousel-button {
+	cursor: pointer;
+	background-color: transparent;
+	outline: none;
+
+	&:focus {
+		outline: none;
+		border: none;
+	}
+}
+
+/// amp carousel arrows - services carousel ///
+#services-carousel .amp-carousel-button-next {
+	right: 30px;
+	@include arrow-right;
+}
+
+#services-carousel .amp-carousel-button-prev {
+	left: 30px;
+	@include arrow-left;
+}
+
+/// amp carousel arrows - menu carousel ///
+#menu__carousel .amp-carousel-button {
+	display: none;
+}
+
+/// amp carousel arrows - reviews carousel ///
+#reviews-slider__slider .amp-carousel-button {
+	display: none;
+
+	@media (min-width: 1280px) {
+		display: flex;
+		top: 247px;
+	}
+}
+
+#reviews-slider__slider .amp-carousel-button-next {
+	@media (min-width: 1280px) {
+		right: calc(50% - 42px);
+		@include arrow-right-sm;
+	}
+}
+
+#reviews-slider__slider .amp-carousel-button-prev {
+	@media (min-width: 1280px) {
+		left: calc(50% - 42px);
+		@include arrow-left-sm;
+	}
+}
+
+/// amp carousel arrows - products carousel ///
+
+#products-slider__slider .amp-carousel-button {
+	top: 71%;
+}
+
+#products-slider__slider .amp-carousel-button-next {
+	right: 30px;
+	@include arrow-right;
+}
+
+#products-slider__slider .amp-carousel-button-prev {
+	left: 30px;
+	@include arrow-left;
+}
+
+/// reset ///
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	box-sizing: border-box;
+	font-family: $prata;
+	font-size: 18px;
+	text-align: left;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	color: #000;
+}
+
+button {
+	font-size: 100%;
+	font-family: inherit;
+	border: 0;
+	padding: 0;
+	background: none;
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+textarea {
+	resize: none;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+/// ui kit styles ///
+h1 {
+	font-size: 48px;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 23px;
+}
+
+h4 {
+	font-size: 22px;
+	font-family: $open-sans;
+	font-weight: 700;
+}
+
+h5 {
+	font-size: 18px;
+	font-family: $open-sans;
+	font-weight: 700;
+}
+
+h6 {
+	font-size: 18px;
+}

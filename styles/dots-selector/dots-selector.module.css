@@ -1,0 +1,21 @@
+.dots-selector {
+  display: flex;
+  align-items: center;
+}
+.dots-selector__dots-container {
+  display: flex;
+}
+.dots-selector__dot-button {
+  width: 5px;
+  height: 5px;
+  border-radius: 10px;
+  display: inline-block;
+  background-color: rgba(106, 117, 113, 0.2);
+}
+.dots-selector__dot-button:nth-child(2) {
+  margin: 0px 5px;
+}
+.dots-selector__dot-button[option][selected] {
+  outline: none;
+  background-color: #6a7571;
+}/*# sourceMappingURL=dots-selector.module.css.map */

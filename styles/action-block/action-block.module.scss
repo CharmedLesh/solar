@@ -1,0 +1,43 @@
+.action-block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 60px;
+
+	&__single-title {
+		margin-bottom: 46px;
+
+		@media (min-width: 1280px) {
+			display: none;
+		}
+	}
+
+	&__title-from-titles {
+		margin-bottom: 13px;
+	}
+
+	&__single-action-button {
+		@media (min-width: 1280px) {
+			display: none;
+		}
+	}
+
+	&__titles {
+		display: none;
+
+		@media (min-width: 1280px) {
+			display: block;
+			margin-bottom: 91px;
+		}
+	}
+
+	&__action-buttons {
+		display: none;
+
+		@media (min-width: 1280px) {
+			display: flex;
+			width: 381px;
+			justify-content: space-between;
+		}
+	}
+}

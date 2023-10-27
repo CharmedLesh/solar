@@ -1,0 +1,12 @@
+.products-cards-row {
+	display: none;
+	width: 100%;
+	padding: 45px 45px 130px;
+	justify-content: space-between;
+	position: relative;
+	background-color: #fdfdfd;
+
+	@media (min-width: 1280px) {
+		display: flex;
+	}
+}
