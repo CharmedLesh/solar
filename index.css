@@ -54,23 +54,29 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgba(0, 0, 0, 0.38);
 }
 .action-button__content:hover {
   background-color: #8e9993;
-  color: rgba(255, 255, 255, 0.63);
 }
 .action-button__content:active {
   background-color: #626865;
+}
+.action-button--text_light .action-button__content {
+  color: rgba(0, 0, 0, 0.38);
+}
+.action-button--text_light .action-button__content:hover {
+  color: rgba(255, 255, 255, 0.63);
+}
+.action-button--text_light .action-button__content:active {
   color: rgba(255, 255, 255, 0.57);
 }
-.action-button__content_black {
+.action-button--text_black .action-button__content {
   color: #000;
 }
-.action-button__content_black:hover {
+.action-button--text_black .action-button__content:hover {
   color: #000;
 }
-.action-button__content_black:active {
+.action-button--text_black .action-button__content:active {
   color: #000;
 }
 
@@ -204,6 +210,18 @@
   flex-direction: column;
   align-items: center;
 }
+.info-card--font-size_12-22 .info-card__title,
+.info-card--font-size_12-22 .info-card__details {
+  font-size: 12px;
+  letter-spacing: 1.2px;
+}
+@media (min-width: 1280px) {
+  .info-card--font-size_12-22 .info-card__title,
+  .info-card--font-size_12-22 .info-card__details {
+    font-size: 22px;
+    letter-spacing: 2.2px;
+  }
+}
 .info-card__pic {
   display: flex;
   margin-bottom: 7px;
@@ -217,27 +235,19 @@
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   text-align: center;
-  font-size: 12px;
-  letter-spacing: 1.2px;
 }
 @media (min-width: 1280px) {
   .info-card__title {
-    font-size: 22px;
-    letter-spacing: 2.2px;
     margin-bottom: 30px;
   }
 }
 .info-card__details {
   font-family: "Open Sans", sans-serif;
   text-align: center;
-  font-size: 12px;
-  letter-spacing: 1.2px;
   display: flex;
 }
 @media (min-width: 1280px) {
   .info-card__details {
-    font-size: 22px;
-    letter-spacing: 2.2px;
     flex-direction: column;
     align-items: center;
   }
