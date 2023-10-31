@@ -1,0 +1,25 @@
+%--button-text {
+	&_light {
+		color: rgba(0, 0, 0, 0.38);
+
+		&:hover {
+			color: rgba(255, 255, 255, 0.63);
+		}
+
+		&:active {
+			color: rgba(255, 255, 255, 0.57);
+		}
+	}
+
+	&_black {
+		color: #000;
+
+		&:hover {
+			color: #000;
+		}
+
+		&:active {
+			color: #000;
+		}
+	}
+}

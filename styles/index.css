@@ -230,6 +230,30 @@ h6 {
   }
 }
 
+.action-button--button-text_light .action-button__content {
+  color: rgba(0, 0, 0, 0.38);
+}
+
+.action-button--button-text_light .action-button__content:hover {
+  color: rgba(255, 255, 255, 0.63);
+}
+
+.action-button--button-text_light .action-button__content:active {
+  color: rgba(255, 255, 255, 0.57);
+}
+
+.action-button--button-text_black .action-button__content {
+  color: #000;
+}
+
+.action-button--button-text_black .action-button__content:hover {
+  color: #000;
+}
+
+.action-button--button-text_black .action-button__content:active {
+  color: #000;
+}
+
 .action-button {
   border: 1px solid #8e9993;
   width: 175px;
@@ -249,24 +273,6 @@ h6 {
 }
 .action-button__content:active {
   background-color: #626865;
-}
-.action-button--text_light .action-button__content {
-  color: rgba(0, 0, 0, 0.38);
-}
-.action-button--text_light .action-button__content:hover {
-  color: rgba(255, 255, 255, 0.63);
-}
-.action-button--text_light .action-button__content:active {
-  color: rgba(255, 255, 255, 0.57);
-}
-.action-button--text_black .action-button__content {
-  color: #000;
-}
-.action-button--text_black .action-button__content:hover {
-  color: #000;
-}
-.action-button--text_black .action-button__content:active {
-  color: #000;
 }
 
 .dots-selector {
@@ -394,26 +400,328 @@ h6 {
   }
 }
 
-.info-card--font-size_12-22 .info-card__title,
-.info-card--font-size_12-22 .info-card__details {
+.message-form__input {
+  font-size: 10px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__input {
+    font-size: 14px;
+  }
+}
+.message__title {
+  font-size: 10px;
+}
+
+@media (min-width: 1280px) {
+  .message__title {
+    font-size: 16px;
+  }
+}
+.review-card__text {
+  font-size: 10px;
+}
+
+@media (min-width: 1280px) {
+  .review-card__text {
+    font-size: 30px;
+  }
+}
+.logo__title {
+  font-size: 11px;
+}
+
+@media (min-width: 1280px) {
+  .logo__title {
+    font-size: 13px;
+  }
+}
+.review-card__author {
+  font-size: 11px;
+}
+
+@media (min-width: 1280px) {
+  .review-card__author {
+    font-size: 22px;
+  }
+}
+.message-form__label {
   font-size: 12px;
 }
 
 @media (min-width: 1280px) {
-  .info-card--font-size_12-22 .info-card__title,
-  .info-card--font-size_12-22 .info-card__details {
+  .message-form__label {
+    font-size: 16px;
+  }
+}
+.price-list-item__description {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__description {
+    font-size: 18px;
+  }
+}
+.info-card__title, .info-card__details {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  .info-card__title, .info-card__details {
     font-size: 22px;
   }
 }
-.info-card--font-size_12-22 .info-card__title,
-.info-card--font-size_12-22 .info-card__details {
+.reviews-slider__title {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  .reviews-slider__title {
+    font-size: 23px;
+  }
+}
+.service-card__description, .product-card__description {
+  font-size: 14px;
+}
+
+@media (min-width: 1280px) {
+  .service-card__description, .product-card__description {
+    font-size: 15px;
+  }
+}
+.message-form__submit {
+  font-size: 14px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__submit {
+    font-size: 16px;
+  }
+}
+.price-list-item__name {
+  font-size: 14px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__name {
+    font-size: 23px;
+  }
+}
+.product-card__title, .price-list-item__price {
+  font-size: 16px;
+}
+
+@media (min-width: 1280px) {
+  .product-card__title, .price-list-item__price {
+    font-size: 23px;
+  }
+}
+.service-card__title {
+  font-size: 17px;
+}
+
+@media (min-width: 1280px) {
+  .service-card__title {
+    font-size: 18px;
+  }
+}
+.menu__subtitle {
+  font-size: 18px;
+}
+
+@media (min-width: 1280px) {
+  .menu__subtitle {
+    font-size: 30px;
+  }
+}
+.video__title {
+  font-size: 18px;
+}
+
+@media (min-width: 1280px) {
+  .video__title {
+    font-size: 36px;
+  }
+}
+.menu__title {
+  font-size: 22px;
+}
+
+@media (min-width: 1280px) {
+  .menu__title {
+    font-size: 48px;
+  }
+}
+.title {
+  font-size: 24px;
+}
+
+@media (min-width: 1280px) {
+  .title {
+    font-size: 48px;
+  }
+}
+.message-form__input {
+  letter-spacing: 0.4px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__input {
+    letter-spacing: 0.56px;
+  }
+}
+.message__title {
+  letter-spacing: 0.4px;
+}
+
+@media (min-width: 1280px) {
+  .message__title {
+    letter-spacing: 0.64px;
+  }
+}
+.message-form__label {
+  letter-spacing: 0.48px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__label {
+    letter-spacing: 0.64px;
+  }
+}
+.message-form__submit {
+  letter-spacing: 0.56px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__submit {
+    letter-spacing: 0.64px;
+  }
+}
+.reviews-slider__title {
+  letter-spacing: 0.78px;
+}
+
+@media (min-width: 1280px) {
+  .reviews-slider__title {
+    letter-spacing: 1.495px;
+  }
+}
+.price-list-item__name {
+  letter-spacing: 0.91px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__name {
+    letter-spacing: 1.495px;
+  }
+}
+.review-card__text {
+  letter-spacing: 1px;
+}
+
+@media (min-width: 1280px) {
+  .review-card__text {
+    letter-spacing: 3px;
+  }
+}
+.product-card__title, .price-list-item__price {
+  letter-spacing: 1.04px;
+}
+
+@media (min-width: 1280px) {
+  .product-card__title, .price-list-item__price {
+    letter-spacing: 1.495px;
+  }
+}
+.logo__title {
+  letter-spacing: 1.1px;
+}
+
+@media (min-width: 1280px) {
+  .logo__title {
+    letter-spacing: 1.3px;
+  }
+}
+.review-card__author {
+  letter-spacing: 1.1px;
+}
+
+@media (min-width: 1280px) {
+  .review-card__author {
+    letter-spacing: 2.2px;
+  }
+}
+.price-list-item__description {
   letter-spacing: 1.2px;
 }
 
 @media (min-width: 1280px) {
-  .info-card--font-size_12-22 .info-card__title,
-  .info-card--font-size_12-22 .info-card__details {
+  .price-list-item__description {
+    letter-spacing: 1.8px;
+  }
+}
+.info-card__title, .info-card__details {
+  letter-spacing: 1.2px;
+}
+
+@media (min-width: 1280px) {
+  .info-card__title, .info-card__details {
     letter-spacing: 2.2px;
+  }
+}
+.service-card__description, .product-card__description {
+  letter-spacing: 1.4px;
+}
+
+@media (min-width: 1280px) {
+  .service-card__description, .product-card__description {
+    letter-spacing: 1.5px;
+  }
+}
+.service-card__title {
+  letter-spacing: 1.7px;
+}
+
+@media (min-width: 1280px) {
+  .service-card__title {
+    letter-spacing: 1.8px;
+  }
+}
+.menu__subtitle {
+  letter-spacing: 1.8px;
+}
+
+@media (min-width: 1280px) {
+  .menu__subtitle {
+    letter-spacing: 3px;
+  }
+}
+.video__title {
+  letter-spacing: 1.8px;
+}
+
+@media (min-width: 1280px) {
+  .video__title {
+    letter-spacing: 3.6px;
+  }
+}
+.menu__title {
+  letter-spacing: 2.2px;
+}
+
+@media (min-width: 1280px) {
+  .menu__title {
+    letter-spacing: 4.8px;
+  }
+}
+.title {
+  letter-spacing: 2.4px;
+}
+
+@media (min-width: 1280px) {
+  .title {
+    letter-spacing: 4.8px;
   }
 }
 .info-card {
@@ -496,6 +804,330 @@ h6 {
   }
 }
 
+.message-form__input {
+  font-size: 10px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__input {
+    font-size: 14px;
+  }
+}
+.message__title {
+  font-size: 10px;
+}
+
+@media (min-width: 1280px) {
+  .message__title {
+    font-size: 16px;
+  }
+}
+.review-card__text {
+  font-size: 10px;
+}
+
+@media (min-width: 1280px) {
+  .review-card__text {
+    font-size: 30px;
+  }
+}
+.logo__title {
+  font-size: 11px;
+}
+
+@media (min-width: 1280px) {
+  .logo__title {
+    font-size: 13px;
+  }
+}
+.review-card__author {
+  font-size: 11px;
+}
+
+@media (min-width: 1280px) {
+  .review-card__author {
+    font-size: 22px;
+  }
+}
+.message-form__label {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__label {
+    font-size: 16px;
+  }
+}
+.price-list-item__description {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__description {
+    font-size: 18px;
+  }
+}
+.info-card__title, .info-card__details {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  .info-card__title, .info-card__details {
+    font-size: 22px;
+  }
+}
+.reviews-slider__title {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  .reviews-slider__title {
+    font-size: 23px;
+  }
+}
+.service-card__description, .product-card__description {
+  font-size: 14px;
+}
+
+@media (min-width: 1280px) {
+  .service-card__description, .product-card__description {
+    font-size: 15px;
+  }
+}
+.message-form__submit {
+  font-size: 14px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__submit {
+    font-size: 16px;
+  }
+}
+.price-list-item__name {
+  font-size: 14px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__name {
+    font-size: 23px;
+  }
+}
+.product-card__title, .price-list-item__price {
+  font-size: 16px;
+}
+
+@media (min-width: 1280px) {
+  .product-card__title, .price-list-item__price {
+    font-size: 23px;
+  }
+}
+.service-card__title {
+  font-size: 17px;
+}
+
+@media (min-width: 1280px) {
+  .service-card__title {
+    font-size: 18px;
+  }
+}
+.menu__subtitle {
+  font-size: 18px;
+}
+
+@media (min-width: 1280px) {
+  .menu__subtitle {
+    font-size: 30px;
+  }
+}
+.video__title {
+  font-size: 18px;
+}
+
+@media (min-width: 1280px) {
+  .video__title {
+    font-size: 36px;
+  }
+}
+.menu__title {
+  font-size: 22px;
+}
+
+@media (min-width: 1280px) {
+  .menu__title {
+    font-size: 48px;
+  }
+}
+.title {
+  font-size: 24px;
+}
+
+@media (min-width: 1280px) {
+  .title {
+    font-size: 48px;
+  }
+}
+.message-form__input {
+  letter-spacing: 0.4px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__input {
+    letter-spacing: 0.56px;
+  }
+}
+.message__title {
+  letter-spacing: 0.4px;
+}
+
+@media (min-width: 1280px) {
+  .message__title {
+    letter-spacing: 0.64px;
+  }
+}
+.message-form__label {
+  letter-spacing: 0.48px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__label {
+    letter-spacing: 0.64px;
+  }
+}
+.message-form__submit {
+  letter-spacing: 0.56px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__submit {
+    letter-spacing: 0.64px;
+  }
+}
+.reviews-slider__title {
+  letter-spacing: 0.78px;
+}
+
+@media (min-width: 1280px) {
+  .reviews-slider__title {
+    letter-spacing: 1.495px;
+  }
+}
+.price-list-item__name {
+  letter-spacing: 0.91px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__name {
+    letter-spacing: 1.495px;
+  }
+}
+.review-card__text {
+  letter-spacing: 1px;
+}
+
+@media (min-width: 1280px) {
+  .review-card__text {
+    letter-spacing: 3px;
+  }
+}
+.product-card__title, .price-list-item__price {
+  letter-spacing: 1.04px;
+}
+
+@media (min-width: 1280px) {
+  .product-card__title, .price-list-item__price {
+    letter-spacing: 1.495px;
+  }
+}
+.logo__title {
+  letter-spacing: 1.1px;
+}
+
+@media (min-width: 1280px) {
+  .logo__title {
+    letter-spacing: 1.3px;
+  }
+}
+.review-card__author {
+  letter-spacing: 1.1px;
+}
+
+@media (min-width: 1280px) {
+  .review-card__author {
+    letter-spacing: 2.2px;
+  }
+}
+.price-list-item__description {
+  letter-spacing: 1.2px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__description {
+    letter-spacing: 1.8px;
+  }
+}
+.info-card__title, .info-card__details {
+  letter-spacing: 1.2px;
+}
+
+@media (min-width: 1280px) {
+  .info-card__title, .info-card__details {
+    letter-spacing: 2.2px;
+  }
+}
+.service-card__description, .product-card__description {
+  letter-spacing: 1.4px;
+}
+
+@media (min-width: 1280px) {
+  .service-card__description, .product-card__description {
+    letter-spacing: 1.5px;
+  }
+}
+.service-card__title {
+  letter-spacing: 1.7px;
+}
+
+@media (min-width: 1280px) {
+  .service-card__title {
+    letter-spacing: 1.8px;
+  }
+}
+.menu__subtitle {
+  letter-spacing: 1.8px;
+}
+
+@media (min-width: 1280px) {
+  .menu__subtitle {
+    letter-spacing: 3px;
+  }
+}
+.video__title {
+  letter-spacing: 1.8px;
+}
+
+@media (min-width: 1280px) {
+  .video__title {
+    letter-spacing: 3.6px;
+  }
+}
+.menu__title {
+  letter-spacing: 2.2px;
+}
+
+@media (min-width: 1280px) {
+  .menu__title {
+    letter-spacing: 4.8px;
+  }
+}
+.title {
+  letter-spacing: 2.4px;
+}
+
+@media (min-width: 1280px) {
+  .title {
+    letter-spacing: 4.8px;
+  }
+}
 .logo__link {
   display: flex;
   flex-direction: column;
@@ -505,14 +1137,6 @@ h6 {
 .logo__title {
   line-height: 15px;
   color: rgba(0, 0, 0, 0.8);
-  font-size: 11px;
-  letter-spacing: 1.1px;
-}
-@media (min-width: 1280px) {
-  .logo__title {
-    font-size: 13px;
-    letter-spacing: 1.3px;
-  }
 }
 .logo svg {
   width: 37px;
@@ -545,6 +1169,330 @@ h6 {
   fill: #1b2622;
 }
 
+.message-form__input {
+  font-size: 10px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__input {
+    font-size: 14px;
+  }
+}
+.message__title {
+  font-size: 10px;
+}
+
+@media (min-width: 1280px) {
+  .message__title {
+    font-size: 16px;
+  }
+}
+.review-card__text {
+  font-size: 10px;
+}
+
+@media (min-width: 1280px) {
+  .review-card__text {
+    font-size: 30px;
+  }
+}
+.logo__title {
+  font-size: 11px;
+}
+
+@media (min-width: 1280px) {
+  .logo__title {
+    font-size: 13px;
+  }
+}
+.review-card__author {
+  font-size: 11px;
+}
+
+@media (min-width: 1280px) {
+  .review-card__author {
+    font-size: 22px;
+  }
+}
+.message-form__label {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__label {
+    font-size: 16px;
+  }
+}
+.price-list-item__description {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__description {
+    font-size: 18px;
+  }
+}
+.info-card__title, .info-card__details {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  .info-card__title, .info-card__details {
+    font-size: 22px;
+  }
+}
+.reviews-slider__title {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  .reviews-slider__title {
+    font-size: 23px;
+  }
+}
+.service-card__description, .product-card__description {
+  font-size: 14px;
+}
+
+@media (min-width: 1280px) {
+  .service-card__description, .product-card__description {
+    font-size: 15px;
+  }
+}
+.message-form__submit {
+  font-size: 14px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__submit {
+    font-size: 16px;
+  }
+}
+.price-list-item__name {
+  font-size: 14px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__name {
+    font-size: 23px;
+  }
+}
+.product-card__title, .price-list-item__price {
+  font-size: 16px;
+}
+
+@media (min-width: 1280px) {
+  .product-card__title, .price-list-item__price {
+    font-size: 23px;
+  }
+}
+.service-card__title {
+  font-size: 17px;
+}
+
+@media (min-width: 1280px) {
+  .service-card__title {
+    font-size: 18px;
+  }
+}
+.menu__subtitle {
+  font-size: 18px;
+}
+
+@media (min-width: 1280px) {
+  .menu__subtitle {
+    font-size: 30px;
+  }
+}
+.video__title {
+  font-size: 18px;
+}
+
+@media (min-width: 1280px) {
+  .video__title {
+    font-size: 36px;
+  }
+}
+.menu__title {
+  font-size: 22px;
+}
+
+@media (min-width: 1280px) {
+  .menu__title {
+    font-size: 48px;
+  }
+}
+.title {
+  font-size: 24px;
+}
+
+@media (min-width: 1280px) {
+  .title {
+    font-size: 48px;
+  }
+}
+.message-form__input {
+  letter-spacing: 0.4px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__input {
+    letter-spacing: 0.56px;
+  }
+}
+.message__title {
+  letter-spacing: 0.4px;
+}
+
+@media (min-width: 1280px) {
+  .message__title {
+    letter-spacing: 0.64px;
+  }
+}
+.message-form__label {
+  letter-spacing: 0.48px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__label {
+    letter-spacing: 0.64px;
+  }
+}
+.message-form__submit {
+  letter-spacing: 0.56px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__submit {
+    letter-spacing: 0.64px;
+  }
+}
+.reviews-slider__title {
+  letter-spacing: 0.78px;
+}
+
+@media (min-width: 1280px) {
+  .reviews-slider__title {
+    letter-spacing: 1.495px;
+  }
+}
+.price-list-item__name {
+  letter-spacing: 0.91px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__name {
+    letter-spacing: 1.495px;
+  }
+}
+.review-card__text {
+  letter-spacing: 1px;
+}
+
+@media (min-width: 1280px) {
+  .review-card__text {
+    letter-spacing: 3px;
+  }
+}
+.product-card__title, .price-list-item__price {
+  letter-spacing: 1.04px;
+}
+
+@media (min-width: 1280px) {
+  .product-card__title, .price-list-item__price {
+    letter-spacing: 1.495px;
+  }
+}
+.logo__title {
+  letter-spacing: 1.1px;
+}
+
+@media (min-width: 1280px) {
+  .logo__title {
+    letter-spacing: 1.3px;
+  }
+}
+.review-card__author {
+  letter-spacing: 1.1px;
+}
+
+@media (min-width: 1280px) {
+  .review-card__author {
+    letter-spacing: 2.2px;
+  }
+}
+.price-list-item__description {
+  letter-spacing: 1.2px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__description {
+    letter-spacing: 1.8px;
+  }
+}
+.info-card__title, .info-card__details {
+  letter-spacing: 1.2px;
+}
+
+@media (min-width: 1280px) {
+  .info-card__title, .info-card__details {
+    letter-spacing: 2.2px;
+  }
+}
+.service-card__description, .product-card__description {
+  letter-spacing: 1.4px;
+}
+
+@media (min-width: 1280px) {
+  .service-card__description, .product-card__description {
+    letter-spacing: 1.5px;
+  }
+}
+.service-card__title {
+  letter-spacing: 1.7px;
+}
+
+@media (min-width: 1280px) {
+  .service-card__title {
+    letter-spacing: 1.8px;
+  }
+}
+.menu__subtitle {
+  letter-spacing: 1.8px;
+}
+
+@media (min-width: 1280px) {
+  .menu__subtitle {
+    letter-spacing: 3px;
+  }
+}
+.video__title {
+  letter-spacing: 1.8px;
+}
+
+@media (min-width: 1280px) {
+  .video__title {
+    letter-spacing: 3.6px;
+  }
+}
+.menu__title {
+  letter-spacing: 2.2px;
+}
+
+@media (min-width: 1280px) {
+  .menu__title {
+    letter-spacing: 4.8px;
+  }
+}
+.title {
+  letter-spacing: 2.4px;
+}
+
+@media (min-width: 1280px) {
+  .title {
+    letter-spacing: 4.8px;
+  }
+}
 .menu {
   width: 100%;
   display: flex;
@@ -595,25 +1543,11 @@ h6 {
   }
 }
 .menu__title {
-  font-size: 22px;
-  letter-spacing: 2.2px;
   width: 174px;
 }
 @media (min-width: 1280px) {
   .menu__title {
-    font-size: 48px;
-    letter-spacing: 4.8px;
     width: 100%;
-  }
-}
-.menu__subtitle {
-  font-size: 18px;
-  letter-spacing: 1.8px;
-}
-@media (min-width: 1280px) {
-  .menu__subtitle {
-    font-size: 30px;
-    letter-spacing: 3px;
   }
 }
 .menu__dots-selector {
@@ -647,20 +1581,340 @@ h6 {
   }
 }
 
+.message-form__input {
+  font-size: 10px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__input {
+    font-size: 14px;
+  }
+}
+.message__title {
+  font-size: 10px;
+}
+
+@media (min-width: 1280px) {
+  .message__title {
+    font-size: 16px;
+  }
+}
+.review-card__text {
+  font-size: 10px;
+}
+
+@media (min-width: 1280px) {
+  .review-card__text {
+    font-size: 30px;
+  }
+}
+.logo__title {
+  font-size: 11px;
+}
+
+@media (min-width: 1280px) {
+  .logo__title {
+    font-size: 13px;
+  }
+}
+.review-card__author {
+  font-size: 11px;
+}
+
+@media (min-width: 1280px) {
+  .review-card__author {
+    font-size: 22px;
+  }
+}
+.message-form__label {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__label {
+    font-size: 16px;
+  }
+}
+.price-list-item__description {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__description {
+    font-size: 18px;
+  }
+}
+.info-card__title, .info-card__details {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  .info-card__title, .info-card__details {
+    font-size: 22px;
+  }
+}
+.reviews-slider__title {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  .reviews-slider__title {
+    font-size: 23px;
+  }
+}
+.service-card__description, .product-card__description {
+  font-size: 14px;
+}
+
+@media (min-width: 1280px) {
+  .service-card__description, .product-card__description {
+    font-size: 15px;
+  }
+}
+.message-form__submit {
+  font-size: 14px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__submit {
+    font-size: 16px;
+  }
+}
+.price-list-item__name {
+  font-size: 14px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__name {
+    font-size: 23px;
+  }
+}
+.product-card__title, .price-list-item__price {
+  font-size: 16px;
+}
+
+@media (min-width: 1280px) {
+  .product-card__title, .price-list-item__price {
+    font-size: 23px;
+  }
+}
+.service-card__title {
+  font-size: 17px;
+}
+
+@media (min-width: 1280px) {
+  .service-card__title {
+    font-size: 18px;
+  }
+}
+.menu__subtitle {
+  font-size: 18px;
+}
+
+@media (min-width: 1280px) {
+  .menu__subtitle {
+    font-size: 30px;
+  }
+}
+.video__title {
+  font-size: 18px;
+}
+
+@media (min-width: 1280px) {
+  .video__title {
+    font-size: 36px;
+  }
+}
+.menu__title {
+  font-size: 22px;
+}
+
+@media (min-width: 1280px) {
+  .menu__title {
+    font-size: 48px;
+  }
+}
+.title {
+  font-size: 24px;
+}
+
+@media (min-width: 1280px) {
+  .title {
+    font-size: 48px;
+  }
+}
+.message-form__input {
+  letter-spacing: 0.4px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__input {
+    letter-spacing: 0.56px;
+  }
+}
+.message__title {
+  letter-spacing: 0.4px;
+}
+
+@media (min-width: 1280px) {
+  .message__title {
+    letter-spacing: 0.64px;
+  }
+}
+.message-form__label {
+  letter-spacing: 0.48px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__label {
+    letter-spacing: 0.64px;
+  }
+}
+.message-form__submit {
+  letter-spacing: 0.56px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__submit {
+    letter-spacing: 0.64px;
+  }
+}
+.reviews-slider__title {
+  letter-spacing: 0.78px;
+}
+
+@media (min-width: 1280px) {
+  .reviews-slider__title {
+    letter-spacing: 1.495px;
+  }
+}
+.price-list-item__name {
+  letter-spacing: 0.91px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__name {
+    letter-spacing: 1.495px;
+  }
+}
+.review-card__text {
+  letter-spacing: 1px;
+}
+
+@media (min-width: 1280px) {
+  .review-card__text {
+    letter-spacing: 3px;
+  }
+}
+.product-card__title, .price-list-item__price {
+  letter-spacing: 1.04px;
+}
+
+@media (min-width: 1280px) {
+  .product-card__title, .price-list-item__price {
+    letter-spacing: 1.495px;
+  }
+}
+.logo__title {
+  letter-spacing: 1.1px;
+}
+
+@media (min-width: 1280px) {
+  .logo__title {
+    letter-spacing: 1.3px;
+  }
+}
+.review-card__author {
+  letter-spacing: 1.1px;
+}
+
+@media (min-width: 1280px) {
+  .review-card__author {
+    letter-spacing: 2.2px;
+  }
+}
+.price-list-item__description {
+  letter-spacing: 1.2px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__description {
+    letter-spacing: 1.8px;
+  }
+}
+.info-card__title, .info-card__details {
+  letter-spacing: 1.2px;
+}
+
+@media (min-width: 1280px) {
+  .info-card__title, .info-card__details {
+    letter-spacing: 2.2px;
+  }
+}
+.service-card__description, .product-card__description {
+  letter-spacing: 1.4px;
+}
+
+@media (min-width: 1280px) {
+  .service-card__description, .product-card__description {
+    letter-spacing: 1.5px;
+  }
+}
+.service-card__title {
+  letter-spacing: 1.7px;
+}
+
+@media (min-width: 1280px) {
+  .service-card__title {
+    letter-spacing: 1.8px;
+  }
+}
+.menu__subtitle {
+  letter-spacing: 1.8px;
+}
+
+@media (min-width: 1280px) {
+  .menu__subtitle {
+    letter-spacing: 3px;
+  }
+}
+.video__title {
+  letter-spacing: 1.8px;
+}
+
+@media (min-width: 1280px) {
+  .video__title {
+    letter-spacing: 3.6px;
+  }
+}
+.menu__title {
+  letter-spacing: 2.2px;
+}
+
+@media (min-width: 1280px) {
+  .menu__title {
+    letter-spacing: 4.8px;
+  }
+}
+.title {
+  letter-spacing: 2.4px;
+}
+
+@media (min-width: 1280px) {
+  .title {
+    letter-spacing: 4.8px;
+  }
+}
 .message-form {
   display: flex;
   flex-direction: column;
 }
 .message-form__label {
-  font-size: 12px;
-  letter-spacing: 0.48px;
   margin-bottom: 3px;
   margin-top: 8px;
 }
 @media (min-width: 1280px) {
   .message-form__label {
-    font-size: 16px;
-    letter-spacing: 0.64px;
     margin-bottom: 7px;
     margin-top: 21px;
   }
@@ -673,14 +1927,10 @@ h6 {
   background: #fff;
   color: rgba(0, 0, 0, 0.51);
   font-family: "Prata", serif;
-  font-size: 10px;
-  letter-spacing: 0.4px;
   padding: 6px;
 }
 @media (min-width: 1280px) {
   .message-form__input {
-    font-size: 14px;
-    letter-spacing: 0.56px;
     padding: 10px;
     height: 41px;
   }
@@ -716,8 +1966,6 @@ h6 {
   border: none;
   color: #fff;
   font-family: "Prata", serif;
-  font-size: 14px;
-  letter-spacing: 0.56px;
   margin-top: 25px;
   padding: 6px;
   line-height: 17px;
@@ -726,8 +1974,6 @@ h6 {
   .message-form__submit {
     width: 50%;
     align-self: flex-end;
-    font-size: 16px;
-    letter-spacing: 0.64px;
     height: 56px;
     margin-top: 38px;
   }
@@ -745,6 +1991,330 @@ h6 {
   color: rgba(255, 255, 255, 0.5098039216);
 }
 
+.message-form__input {
+  font-size: 10px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__input {
+    font-size: 14px;
+  }
+}
+.message__title {
+  font-size: 10px;
+}
+
+@media (min-width: 1280px) {
+  .message__title {
+    font-size: 16px;
+  }
+}
+.review-card__text {
+  font-size: 10px;
+}
+
+@media (min-width: 1280px) {
+  .review-card__text {
+    font-size: 30px;
+  }
+}
+.logo__title {
+  font-size: 11px;
+}
+
+@media (min-width: 1280px) {
+  .logo__title {
+    font-size: 13px;
+  }
+}
+.review-card__author {
+  font-size: 11px;
+}
+
+@media (min-width: 1280px) {
+  .review-card__author {
+    font-size: 22px;
+  }
+}
+.message-form__label {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__label {
+    font-size: 16px;
+  }
+}
+.price-list-item__description {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__description {
+    font-size: 18px;
+  }
+}
+.info-card__title, .info-card__details {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  .info-card__title, .info-card__details {
+    font-size: 22px;
+  }
+}
+.reviews-slider__title {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  .reviews-slider__title {
+    font-size: 23px;
+  }
+}
+.service-card__description, .product-card__description {
+  font-size: 14px;
+}
+
+@media (min-width: 1280px) {
+  .service-card__description, .product-card__description {
+    font-size: 15px;
+  }
+}
+.message-form__submit {
+  font-size: 14px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__submit {
+    font-size: 16px;
+  }
+}
+.price-list-item__name {
+  font-size: 14px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__name {
+    font-size: 23px;
+  }
+}
+.product-card__title, .price-list-item__price {
+  font-size: 16px;
+}
+
+@media (min-width: 1280px) {
+  .product-card__title, .price-list-item__price {
+    font-size: 23px;
+  }
+}
+.service-card__title {
+  font-size: 17px;
+}
+
+@media (min-width: 1280px) {
+  .service-card__title {
+    font-size: 18px;
+  }
+}
+.menu__subtitle {
+  font-size: 18px;
+}
+
+@media (min-width: 1280px) {
+  .menu__subtitle {
+    font-size: 30px;
+  }
+}
+.video__title {
+  font-size: 18px;
+}
+
+@media (min-width: 1280px) {
+  .video__title {
+    font-size: 36px;
+  }
+}
+.menu__title {
+  font-size: 22px;
+}
+
+@media (min-width: 1280px) {
+  .menu__title {
+    font-size: 48px;
+  }
+}
+.title {
+  font-size: 24px;
+}
+
+@media (min-width: 1280px) {
+  .title {
+    font-size: 48px;
+  }
+}
+.message-form__input {
+  letter-spacing: 0.4px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__input {
+    letter-spacing: 0.56px;
+  }
+}
+.message__title {
+  letter-spacing: 0.4px;
+}
+
+@media (min-width: 1280px) {
+  .message__title {
+    letter-spacing: 0.64px;
+  }
+}
+.message-form__label {
+  letter-spacing: 0.48px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__label {
+    letter-spacing: 0.64px;
+  }
+}
+.message-form__submit {
+  letter-spacing: 0.56px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__submit {
+    letter-spacing: 0.64px;
+  }
+}
+.reviews-slider__title {
+  letter-spacing: 0.78px;
+}
+
+@media (min-width: 1280px) {
+  .reviews-slider__title {
+    letter-spacing: 1.495px;
+  }
+}
+.price-list-item__name {
+  letter-spacing: 0.91px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__name {
+    letter-spacing: 1.495px;
+  }
+}
+.review-card__text {
+  letter-spacing: 1px;
+}
+
+@media (min-width: 1280px) {
+  .review-card__text {
+    letter-spacing: 3px;
+  }
+}
+.product-card__title, .price-list-item__price {
+  letter-spacing: 1.04px;
+}
+
+@media (min-width: 1280px) {
+  .product-card__title, .price-list-item__price {
+    letter-spacing: 1.495px;
+  }
+}
+.logo__title {
+  letter-spacing: 1.1px;
+}
+
+@media (min-width: 1280px) {
+  .logo__title {
+    letter-spacing: 1.3px;
+  }
+}
+.review-card__author {
+  letter-spacing: 1.1px;
+}
+
+@media (min-width: 1280px) {
+  .review-card__author {
+    letter-spacing: 2.2px;
+  }
+}
+.price-list-item__description {
+  letter-spacing: 1.2px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__description {
+    letter-spacing: 1.8px;
+  }
+}
+.info-card__title, .info-card__details {
+  letter-spacing: 1.2px;
+}
+
+@media (min-width: 1280px) {
+  .info-card__title, .info-card__details {
+    letter-spacing: 2.2px;
+  }
+}
+.service-card__description, .product-card__description {
+  letter-spacing: 1.4px;
+}
+
+@media (min-width: 1280px) {
+  .service-card__description, .product-card__description {
+    letter-spacing: 1.5px;
+  }
+}
+.service-card__title {
+  letter-spacing: 1.7px;
+}
+
+@media (min-width: 1280px) {
+  .service-card__title {
+    letter-spacing: 1.8px;
+  }
+}
+.menu__subtitle {
+  letter-spacing: 1.8px;
+}
+
+@media (min-width: 1280px) {
+  .menu__subtitle {
+    letter-spacing: 3px;
+  }
+}
+.video__title {
+  letter-spacing: 1.8px;
+}
+
+@media (min-width: 1280px) {
+  .video__title {
+    letter-spacing: 3.6px;
+  }
+}
+.menu__title {
+  letter-spacing: 2.2px;
+}
+
+@media (min-width: 1280px) {
+  .menu__title {
+    letter-spacing: 4.8px;
+  }
+}
+.title {
+  letter-spacing: 2.4px;
+}
+
+@media (min-width: 1280px) {
+  .title {
+    letter-spacing: 4.8px;
+  }
+}
 .message {
   width: 100%;
   display: flex;
@@ -771,13 +2341,9 @@ h6 {
 }
 .message__title {
   text-align: center;
-  font-size: 10px;
-  letter-spacing: 0.4px;
 }
 @media (min-width: 1280px) {
   .message__title {
-    font-size: 16px;
-    letter-spacing: 0.64px;
     padding: 0px 30px 20px;
   }
 }
@@ -789,6 +2355,330 @@ h6 {
   font-family: "Open Sans", sans-serif;
 }
 
+.message-form__input {
+  font-size: 10px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__input {
+    font-size: 14px;
+  }
+}
+.message__title {
+  font-size: 10px;
+}
+
+@media (min-width: 1280px) {
+  .message__title {
+    font-size: 16px;
+  }
+}
+.review-card__text {
+  font-size: 10px;
+}
+
+@media (min-width: 1280px) {
+  .review-card__text {
+    font-size: 30px;
+  }
+}
+.logo__title {
+  font-size: 11px;
+}
+
+@media (min-width: 1280px) {
+  .logo__title {
+    font-size: 13px;
+  }
+}
+.review-card__author {
+  font-size: 11px;
+}
+
+@media (min-width: 1280px) {
+  .review-card__author {
+    font-size: 22px;
+  }
+}
+.message-form__label {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__label {
+    font-size: 16px;
+  }
+}
+.price-list-item__description {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__description {
+    font-size: 18px;
+  }
+}
+.info-card__title, .info-card__details {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  .info-card__title, .info-card__details {
+    font-size: 22px;
+  }
+}
+.reviews-slider__title {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  .reviews-slider__title {
+    font-size: 23px;
+  }
+}
+.service-card__description, .product-card__description {
+  font-size: 14px;
+}
+
+@media (min-width: 1280px) {
+  .service-card__description, .product-card__description {
+    font-size: 15px;
+  }
+}
+.message-form__submit {
+  font-size: 14px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__submit {
+    font-size: 16px;
+  }
+}
+.price-list-item__name {
+  font-size: 14px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__name {
+    font-size: 23px;
+  }
+}
+.product-card__title, .price-list-item__price {
+  font-size: 16px;
+}
+
+@media (min-width: 1280px) {
+  .product-card__title, .price-list-item__price {
+    font-size: 23px;
+  }
+}
+.service-card__title {
+  font-size: 17px;
+}
+
+@media (min-width: 1280px) {
+  .service-card__title {
+    font-size: 18px;
+  }
+}
+.menu__subtitle {
+  font-size: 18px;
+}
+
+@media (min-width: 1280px) {
+  .menu__subtitle {
+    font-size: 30px;
+  }
+}
+.video__title {
+  font-size: 18px;
+}
+
+@media (min-width: 1280px) {
+  .video__title {
+    font-size: 36px;
+  }
+}
+.menu__title {
+  font-size: 22px;
+}
+
+@media (min-width: 1280px) {
+  .menu__title {
+    font-size: 48px;
+  }
+}
+.title {
+  font-size: 24px;
+}
+
+@media (min-width: 1280px) {
+  .title {
+    font-size: 48px;
+  }
+}
+.message-form__input {
+  letter-spacing: 0.4px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__input {
+    letter-spacing: 0.56px;
+  }
+}
+.message__title {
+  letter-spacing: 0.4px;
+}
+
+@media (min-width: 1280px) {
+  .message__title {
+    letter-spacing: 0.64px;
+  }
+}
+.message-form__label {
+  letter-spacing: 0.48px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__label {
+    letter-spacing: 0.64px;
+  }
+}
+.message-form__submit {
+  letter-spacing: 0.56px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__submit {
+    letter-spacing: 0.64px;
+  }
+}
+.reviews-slider__title {
+  letter-spacing: 0.78px;
+}
+
+@media (min-width: 1280px) {
+  .reviews-slider__title {
+    letter-spacing: 1.495px;
+  }
+}
+.price-list-item__name {
+  letter-spacing: 0.91px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__name {
+    letter-spacing: 1.495px;
+  }
+}
+.review-card__text {
+  letter-spacing: 1px;
+}
+
+@media (min-width: 1280px) {
+  .review-card__text {
+    letter-spacing: 3px;
+  }
+}
+.product-card__title, .price-list-item__price {
+  letter-spacing: 1.04px;
+}
+
+@media (min-width: 1280px) {
+  .product-card__title, .price-list-item__price {
+    letter-spacing: 1.495px;
+  }
+}
+.logo__title {
+  letter-spacing: 1.1px;
+}
+
+@media (min-width: 1280px) {
+  .logo__title {
+    letter-spacing: 1.3px;
+  }
+}
+.review-card__author {
+  letter-spacing: 1.1px;
+}
+
+@media (min-width: 1280px) {
+  .review-card__author {
+    letter-spacing: 2.2px;
+  }
+}
+.price-list-item__description {
+  letter-spacing: 1.2px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__description {
+    letter-spacing: 1.8px;
+  }
+}
+.info-card__title, .info-card__details {
+  letter-spacing: 1.2px;
+}
+
+@media (min-width: 1280px) {
+  .info-card__title, .info-card__details {
+    letter-spacing: 2.2px;
+  }
+}
+.service-card__description, .product-card__description {
+  letter-spacing: 1.4px;
+}
+
+@media (min-width: 1280px) {
+  .service-card__description, .product-card__description {
+    letter-spacing: 1.5px;
+  }
+}
+.service-card__title {
+  letter-spacing: 1.7px;
+}
+
+@media (min-width: 1280px) {
+  .service-card__title {
+    letter-spacing: 1.8px;
+  }
+}
+.menu__subtitle {
+  letter-spacing: 1.8px;
+}
+
+@media (min-width: 1280px) {
+  .menu__subtitle {
+    letter-spacing: 3px;
+  }
+}
+.video__title {
+  letter-spacing: 1.8px;
+}
+
+@media (min-width: 1280px) {
+  .video__title {
+    letter-spacing: 3.6px;
+  }
+}
+.menu__title {
+  letter-spacing: 2.2px;
+}
+
+@media (min-width: 1280px) {
+  .menu__title {
+    letter-spacing: 4.8px;
+  }
+}
+.title {
+  letter-spacing: 2.4px;
+}
+
+@media (min-width: 1280px) {
+  .title {
+    letter-spacing: 4.8px;
+  }
+}
 @media (min-width: 1280px) {
   .price-list-item {
     display: flex;
@@ -805,42 +2695,350 @@ h6 {
   }
 }
 .price-list-item__name {
-  font-size: 14px;
-  letter-spacing: 0.91px;
   margin-bottom: 10px;
 }
 @media (min-width: 1280px) {
   .price-list-item__name {
-    font-size: 23px;
-    letter-spacing: 1.495px;
     margin-bottom: 18px;
   }
 }
 .price-list-item__description {
   color: rgba(0, 0, 0, 0.8);
-  font-size: 12px;
-  letter-spacing: 1.2px;
-}
-@media (min-width: 1280px) {
-  .price-list-item__description {
-    font-size: 18px;
-    letter-spacing: 1.8px;
-  }
 }
 .price-list-item__price {
-  font-size: 16px;
-  letter-spacing: 1.04px;
   text-align: center;
 }
 @media (min-width: 1280px) {
   .price-list-item__price {
     width: 15%;
-    font-size: 23px;
-    letter-spacing: 1.495px;
     text-align: start;
   }
 }
 
+.message-form__input {
+  font-size: 10px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__input {
+    font-size: 14px;
+  }
+}
+.message__title {
+  font-size: 10px;
+}
+
+@media (min-width: 1280px) {
+  .message__title {
+    font-size: 16px;
+  }
+}
+.review-card__text {
+  font-size: 10px;
+}
+
+@media (min-width: 1280px) {
+  .review-card__text {
+    font-size: 30px;
+  }
+}
+.logo__title {
+  font-size: 11px;
+}
+
+@media (min-width: 1280px) {
+  .logo__title {
+    font-size: 13px;
+  }
+}
+.review-card__author {
+  font-size: 11px;
+}
+
+@media (min-width: 1280px) {
+  .review-card__author {
+    font-size: 22px;
+  }
+}
+.message-form__label {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__label {
+    font-size: 16px;
+  }
+}
+.price-list-item__description {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__description {
+    font-size: 18px;
+  }
+}
+.info-card__title, .info-card__details {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  .info-card__title, .info-card__details {
+    font-size: 22px;
+  }
+}
+.reviews-slider__title {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  .reviews-slider__title {
+    font-size: 23px;
+  }
+}
+.service-card__description, .product-card__description {
+  font-size: 14px;
+}
+
+@media (min-width: 1280px) {
+  .service-card__description, .product-card__description {
+    font-size: 15px;
+  }
+}
+.message-form__submit {
+  font-size: 14px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__submit {
+    font-size: 16px;
+  }
+}
+.price-list-item__name {
+  font-size: 14px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__name {
+    font-size: 23px;
+  }
+}
+.price-list-item__price, .product-card__title {
+  font-size: 16px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__price, .product-card__title {
+    font-size: 23px;
+  }
+}
+.service-card__title {
+  font-size: 17px;
+}
+
+@media (min-width: 1280px) {
+  .service-card__title {
+    font-size: 18px;
+  }
+}
+.menu__subtitle {
+  font-size: 18px;
+}
+
+@media (min-width: 1280px) {
+  .menu__subtitle {
+    font-size: 30px;
+  }
+}
+.video__title {
+  font-size: 18px;
+}
+
+@media (min-width: 1280px) {
+  .video__title {
+    font-size: 36px;
+  }
+}
+.menu__title {
+  font-size: 22px;
+}
+
+@media (min-width: 1280px) {
+  .menu__title {
+    font-size: 48px;
+  }
+}
+.title {
+  font-size: 24px;
+}
+
+@media (min-width: 1280px) {
+  .title {
+    font-size: 48px;
+  }
+}
+.message-form__input {
+  letter-spacing: 0.4px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__input {
+    letter-spacing: 0.56px;
+  }
+}
+.message__title {
+  letter-spacing: 0.4px;
+}
+
+@media (min-width: 1280px) {
+  .message__title {
+    letter-spacing: 0.64px;
+  }
+}
+.message-form__label {
+  letter-spacing: 0.48px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__label {
+    letter-spacing: 0.64px;
+  }
+}
+.message-form__submit {
+  letter-spacing: 0.56px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__submit {
+    letter-spacing: 0.64px;
+  }
+}
+.reviews-slider__title {
+  letter-spacing: 0.78px;
+}
+
+@media (min-width: 1280px) {
+  .reviews-slider__title {
+    letter-spacing: 1.495px;
+  }
+}
+.price-list-item__name {
+  letter-spacing: 0.91px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__name {
+    letter-spacing: 1.495px;
+  }
+}
+.review-card__text {
+  letter-spacing: 1px;
+}
+
+@media (min-width: 1280px) {
+  .review-card__text {
+    letter-spacing: 3px;
+  }
+}
+.price-list-item__price, .product-card__title {
+  letter-spacing: 1.04px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__price, .product-card__title {
+    letter-spacing: 1.495px;
+  }
+}
+.logo__title {
+  letter-spacing: 1.1px;
+}
+
+@media (min-width: 1280px) {
+  .logo__title {
+    letter-spacing: 1.3px;
+  }
+}
+.review-card__author {
+  letter-spacing: 1.1px;
+}
+
+@media (min-width: 1280px) {
+  .review-card__author {
+    letter-spacing: 2.2px;
+  }
+}
+.price-list-item__description {
+  letter-spacing: 1.2px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__description {
+    letter-spacing: 1.8px;
+  }
+}
+.info-card__title, .info-card__details {
+  letter-spacing: 1.2px;
+}
+
+@media (min-width: 1280px) {
+  .info-card__title, .info-card__details {
+    letter-spacing: 2.2px;
+  }
+}
+.service-card__description, .product-card__description {
+  letter-spacing: 1.4px;
+}
+
+@media (min-width: 1280px) {
+  .service-card__description, .product-card__description {
+    letter-spacing: 1.5px;
+  }
+}
+.service-card__title {
+  letter-spacing: 1.7px;
+}
+
+@media (min-width: 1280px) {
+  .service-card__title {
+    letter-spacing: 1.8px;
+  }
+}
+.menu__subtitle {
+  letter-spacing: 1.8px;
+}
+
+@media (min-width: 1280px) {
+  .menu__subtitle {
+    letter-spacing: 3px;
+  }
+}
+.video__title {
+  letter-spacing: 1.8px;
+}
+
+@media (min-width: 1280px) {
+  .video__title {
+    letter-spacing: 3.6px;
+  }
+}
+.menu__title {
+  letter-spacing: 2.2px;
+}
+
+@media (min-width: 1280px) {
+  .menu__title {
+    letter-spacing: 4.8px;
+  }
+}
+.title {
+  letter-spacing: 2.4px;
+}
+
+@media (min-width: 1280px) {
+  .title {
+    letter-spacing: 4.8px;
+  }
+}
 .product-card {
   display: flex;
   flex-direction: column;
@@ -881,14 +3079,6 @@ h6 {
 }
 .product-card__title {
   text-align: center;
-  font-size: 16px;
-  letter-spacing: 1.04px;
-}
-@media (min-width: 1280px) {
-  .product-card__title {
-    font-size: 23px;
-    letter-spacing: 1.495px;
-  }
 }
 .product-card__decoration-pic {
   display: flex;
@@ -896,14 +3086,10 @@ h6 {
 }
 .product-card__description {
   text-align: center;
-  font-size: 14px;
-  letter-spacing: 1.4px;
 }
 @media (min-width: 1280px) {
   .product-card__description {
     max-width: 292px;
-    font-size: 15px;
-    letter-spacing: 1.5px;
   }
 }
 
@@ -933,16 +3119,336 @@ h6 {
   }
 }
 
+.message-form__input {
+  font-size: 10px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__input {
+    font-size: 14px;
+  }
+}
+.message__title {
+  font-size: 10px;
+}
+
+@media (min-width: 1280px) {
+  .message__title {
+    font-size: 16px;
+  }
+}
+.review-card__text {
+  font-size: 10px;
+}
+
+@media (min-width: 1280px) {
+  .review-card__text {
+    font-size: 30px;
+  }
+}
+.logo__title {
+  font-size: 11px;
+}
+
+@media (min-width: 1280px) {
+  .logo__title {
+    font-size: 13px;
+  }
+}
+.review-card__author {
+  font-size: 11px;
+}
+
+@media (min-width: 1280px) {
+  .review-card__author {
+    font-size: 22px;
+  }
+}
+.message-form__label {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__label {
+    font-size: 16px;
+  }
+}
+.price-list-item__description {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__description {
+    font-size: 18px;
+  }
+}
+.info-card__title, .info-card__details {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  .info-card__title, .info-card__details {
+    font-size: 22px;
+  }
+}
+.reviews-slider__title {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  .reviews-slider__title {
+    font-size: 23px;
+  }
+}
+.service-card__description, .product-card__description {
+  font-size: 14px;
+}
+
+@media (min-width: 1280px) {
+  .service-card__description, .product-card__description {
+    font-size: 15px;
+  }
+}
+.message-form__submit {
+  font-size: 14px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__submit {
+    font-size: 16px;
+  }
+}
+.price-list-item__name {
+  font-size: 14px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__name {
+    font-size: 23px;
+  }
+}
+.price-list-item__price, .product-card__title {
+  font-size: 16px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__price, .product-card__title {
+    font-size: 23px;
+  }
+}
+.service-card__title {
+  font-size: 17px;
+}
+
+@media (min-width: 1280px) {
+  .service-card__title {
+    font-size: 18px;
+  }
+}
+.menu__subtitle {
+  font-size: 18px;
+}
+
+@media (min-width: 1280px) {
+  .menu__subtitle {
+    font-size: 30px;
+  }
+}
+.video__title {
+  font-size: 18px;
+}
+
+@media (min-width: 1280px) {
+  .video__title {
+    font-size: 36px;
+  }
+}
+.menu__title {
+  font-size: 22px;
+}
+
+@media (min-width: 1280px) {
+  .menu__title {
+    font-size: 48px;
+  }
+}
+.title {
+  font-size: 24px;
+}
+
+@media (min-width: 1280px) {
+  .title {
+    font-size: 48px;
+  }
+}
+.message-form__input {
+  letter-spacing: 0.4px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__input {
+    letter-spacing: 0.56px;
+  }
+}
+.message__title {
+  letter-spacing: 0.4px;
+}
+
+@media (min-width: 1280px) {
+  .message__title {
+    letter-spacing: 0.64px;
+  }
+}
+.message-form__label {
+  letter-spacing: 0.48px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__label {
+    letter-spacing: 0.64px;
+  }
+}
+.message-form__submit {
+  letter-spacing: 0.56px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__submit {
+    letter-spacing: 0.64px;
+  }
+}
+.reviews-slider__title {
+  letter-spacing: 0.78px;
+}
+
+@media (min-width: 1280px) {
+  .reviews-slider__title {
+    letter-spacing: 1.495px;
+  }
+}
+.price-list-item__name {
+  letter-spacing: 0.91px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__name {
+    letter-spacing: 1.495px;
+  }
+}
+.review-card__text {
+  letter-spacing: 1px;
+}
+
+@media (min-width: 1280px) {
+  .review-card__text {
+    letter-spacing: 3px;
+  }
+}
+.price-list-item__price, .product-card__title {
+  letter-spacing: 1.04px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__price, .product-card__title {
+    letter-spacing: 1.495px;
+  }
+}
+.logo__title {
+  letter-spacing: 1.1px;
+}
+
+@media (min-width: 1280px) {
+  .logo__title {
+    letter-spacing: 1.3px;
+  }
+}
+.review-card__author {
+  letter-spacing: 1.1px;
+}
+
+@media (min-width: 1280px) {
+  .review-card__author {
+    letter-spacing: 2.2px;
+  }
+}
+.price-list-item__description {
+  letter-spacing: 1.2px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__description {
+    letter-spacing: 1.8px;
+  }
+}
+.info-card__title, .info-card__details {
+  letter-spacing: 1.2px;
+}
+
+@media (min-width: 1280px) {
+  .info-card__title, .info-card__details {
+    letter-spacing: 2.2px;
+  }
+}
+.service-card__description, .product-card__description {
+  letter-spacing: 1.4px;
+}
+
+@media (min-width: 1280px) {
+  .service-card__description, .product-card__description {
+    letter-spacing: 1.5px;
+  }
+}
+.service-card__title {
+  letter-spacing: 1.7px;
+}
+
+@media (min-width: 1280px) {
+  .service-card__title {
+    letter-spacing: 1.8px;
+  }
+}
+.menu__subtitle {
+  letter-spacing: 1.8px;
+}
+
+@media (min-width: 1280px) {
+  .menu__subtitle {
+    letter-spacing: 3px;
+  }
+}
+.video__title {
+  letter-spacing: 1.8px;
+}
+
+@media (min-width: 1280px) {
+  .video__title {
+    letter-spacing: 3.6px;
+  }
+}
+.menu__title {
+  letter-spacing: 2.2px;
+}
+
+@media (min-width: 1280px) {
+  .menu__title {
+    letter-spacing: 4.8px;
+  }
+}
+.title {
+  letter-spacing: 2.4px;
+}
+
+@media (min-width: 1280px) {
+  .title {
+    letter-spacing: 4.8px;
+  }
+}
 .review-card__text {
   text-align: center;
-  font-size: 10px;
-  letter-spacing: 1px;
   margin-bottom: 8px;
 }
 @media (min-width: 1280px) {
   .review-card__text {
-    font-size: 30px;
-    letter-spacing: 3px;
     margin-bottom: 36px;
     max-height: 122.4px;
   }
@@ -950,16 +3456,332 @@ h6 {
 .review-card__author {
   text-align: center;
   font-family: "Open Sans", sans-serif;
-  font-size: 11px;
-  letter-spacing: 1.1px;
 }
+
+.message-form__input {
+  font-size: 10px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__input {
+    font-size: 14px;
+  }
+}
+.message__title {
+  font-size: 10px;
+}
+
+@media (min-width: 1280px) {
+  .message__title {
+    font-size: 16px;
+  }
+}
+.review-card__text {
+  font-size: 10px;
+}
+
+@media (min-width: 1280px) {
+  .review-card__text {
+    font-size: 30px;
+  }
+}
+.logo__title {
+  font-size: 11px;
+}
+
+@media (min-width: 1280px) {
+  .logo__title {
+    font-size: 13px;
+  }
+}
+.review-card__author {
+  font-size: 11px;
+}
+
 @media (min-width: 1280px) {
   .review-card__author {
     font-size: 22px;
+  }
+}
+.message-form__label {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__label {
+    font-size: 16px;
+  }
+}
+.price-list-item__description {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__description {
+    font-size: 18px;
+  }
+}
+.info-card__title, .info-card__details {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  .info-card__title, .info-card__details {
+    font-size: 22px;
+  }
+}
+.reviews-slider__title {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  .reviews-slider__title {
+    font-size: 23px;
+  }
+}
+.service-card__description, .product-card__description {
+  font-size: 14px;
+}
+
+@media (min-width: 1280px) {
+  .service-card__description, .product-card__description {
+    font-size: 15px;
+  }
+}
+.message-form__submit {
+  font-size: 14px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__submit {
+    font-size: 16px;
+  }
+}
+.price-list-item__name {
+  font-size: 14px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__name {
+    font-size: 23px;
+  }
+}
+.price-list-item__price, .product-card__title {
+  font-size: 16px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__price, .product-card__title {
+    font-size: 23px;
+  }
+}
+.service-card__title {
+  font-size: 17px;
+}
+
+@media (min-width: 1280px) {
+  .service-card__title {
+    font-size: 18px;
+  }
+}
+.menu__subtitle {
+  font-size: 18px;
+}
+
+@media (min-width: 1280px) {
+  .menu__subtitle {
+    font-size: 30px;
+  }
+}
+.video__title {
+  font-size: 18px;
+}
+
+@media (min-width: 1280px) {
+  .video__title {
+    font-size: 36px;
+  }
+}
+.menu__title {
+  font-size: 22px;
+}
+
+@media (min-width: 1280px) {
+  .menu__title {
+    font-size: 48px;
+  }
+}
+.title {
+  font-size: 24px;
+}
+
+@media (min-width: 1280px) {
+  .title {
+    font-size: 48px;
+  }
+}
+.message-form__input {
+  letter-spacing: 0.4px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__input {
+    letter-spacing: 0.56px;
+  }
+}
+.message__title {
+  letter-spacing: 0.4px;
+}
+
+@media (min-width: 1280px) {
+  .message__title {
+    letter-spacing: 0.64px;
+  }
+}
+.message-form__label {
+  letter-spacing: 0.48px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__label {
+    letter-spacing: 0.64px;
+  }
+}
+.message-form__submit {
+  letter-spacing: 0.56px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__submit {
+    letter-spacing: 0.64px;
+  }
+}
+.reviews-slider__title {
+  letter-spacing: 0.78px;
+}
+
+@media (min-width: 1280px) {
+  .reviews-slider__title {
+    letter-spacing: 1.495px;
+  }
+}
+.price-list-item__name {
+  letter-spacing: 0.91px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__name {
+    letter-spacing: 1.495px;
+  }
+}
+.review-card__text {
+  letter-spacing: 1px;
+}
+
+@media (min-width: 1280px) {
+  .review-card__text {
+    letter-spacing: 3px;
+  }
+}
+.price-list-item__price, .product-card__title {
+  letter-spacing: 1.04px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__price, .product-card__title {
+    letter-spacing: 1.495px;
+  }
+}
+.logo__title {
+  letter-spacing: 1.1px;
+}
+
+@media (min-width: 1280px) {
+  .logo__title {
+    letter-spacing: 1.3px;
+  }
+}
+.review-card__author {
+  letter-spacing: 1.1px;
+}
+
+@media (min-width: 1280px) {
+  .review-card__author {
     letter-spacing: 2.2px;
   }
 }
+.price-list-item__description {
+  letter-spacing: 1.2px;
+}
 
+@media (min-width: 1280px) {
+  .price-list-item__description {
+    letter-spacing: 1.8px;
+  }
+}
+.info-card__title, .info-card__details {
+  letter-spacing: 1.2px;
+}
+
+@media (min-width: 1280px) {
+  .info-card__title, .info-card__details {
+    letter-spacing: 2.2px;
+  }
+}
+.service-card__description, .product-card__description {
+  letter-spacing: 1.4px;
+}
+
+@media (min-width: 1280px) {
+  .service-card__description, .product-card__description {
+    letter-spacing: 1.5px;
+  }
+}
+.service-card__title {
+  letter-spacing: 1.7px;
+}
+
+@media (min-width: 1280px) {
+  .service-card__title {
+    letter-spacing: 1.8px;
+  }
+}
+.menu__subtitle {
+  letter-spacing: 1.8px;
+}
+
+@media (min-width: 1280px) {
+  .menu__subtitle {
+    letter-spacing: 3px;
+  }
+}
+.video__title {
+  letter-spacing: 1.8px;
+}
+
+@media (min-width: 1280px) {
+  .video__title {
+    letter-spacing: 3.6px;
+  }
+}
+.menu__title {
+  letter-spacing: 2.2px;
+}
+
+@media (min-width: 1280px) {
+  .menu__title {
+    letter-spacing: 4.8px;
+  }
+}
+.title {
+  letter-spacing: 2.4px;
+}
+
+@media (min-width: 1280px) {
+  .title {
+    letter-spacing: 4.8px;
+  }
+}
 .reviews-slider {
   width: 100%;
   background-color: rgba(142, 153, 147, 0.62);
@@ -976,14 +3798,10 @@ h6 {
 }
 .reviews-slider__title {
   text-align: center;
-  font-size: 12px;
   margin-bottom: 14px;
-  letter-spacing: 0.78px;
 }
 @media (min-width: 1280px) {
   .reviews-slider__title {
-    font-size: 23px;
-    letter-spacing: 1.495px;
     margin-bottom: 60px;
   }
 }
@@ -1017,6 +3835,330 @@ h6 {
   }
 }
 
+.message-form__input {
+  font-size: 10px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__input {
+    font-size: 14px;
+  }
+}
+.message__title {
+  font-size: 10px;
+}
+
+@media (min-width: 1280px) {
+  .message__title {
+    font-size: 16px;
+  }
+}
+.review-card__text {
+  font-size: 10px;
+}
+
+@media (min-width: 1280px) {
+  .review-card__text {
+    font-size: 30px;
+  }
+}
+.logo__title {
+  font-size: 11px;
+}
+
+@media (min-width: 1280px) {
+  .logo__title {
+    font-size: 13px;
+  }
+}
+.review-card__author {
+  font-size: 11px;
+}
+
+@media (min-width: 1280px) {
+  .review-card__author {
+    font-size: 22px;
+  }
+}
+.message-form__label {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__label {
+    font-size: 16px;
+  }
+}
+.price-list-item__description {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__description {
+    font-size: 18px;
+  }
+}
+.info-card__title, .info-card__details {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  .info-card__title, .info-card__details {
+    font-size: 22px;
+  }
+}
+.reviews-slider__title {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  .reviews-slider__title {
+    font-size: 23px;
+  }
+}
+.product-card__description, .service-card__description {
+  font-size: 14px;
+}
+
+@media (min-width: 1280px) {
+  .product-card__description, .service-card__description {
+    font-size: 15px;
+  }
+}
+.message-form__submit {
+  font-size: 14px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__submit {
+    font-size: 16px;
+  }
+}
+.price-list-item__name {
+  font-size: 14px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__name {
+    font-size: 23px;
+  }
+}
+.price-list-item__price, .product-card__title {
+  font-size: 16px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__price, .product-card__title {
+    font-size: 23px;
+  }
+}
+.service-card__title {
+  font-size: 17px;
+}
+
+@media (min-width: 1280px) {
+  .service-card__title {
+    font-size: 18px;
+  }
+}
+.menu__subtitle {
+  font-size: 18px;
+}
+
+@media (min-width: 1280px) {
+  .menu__subtitle {
+    font-size: 30px;
+  }
+}
+.video__title {
+  font-size: 18px;
+}
+
+@media (min-width: 1280px) {
+  .video__title {
+    font-size: 36px;
+  }
+}
+.menu__title {
+  font-size: 22px;
+}
+
+@media (min-width: 1280px) {
+  .menu__title {
+    font-size: 48px;
+  }
+}
+.title {
+  font-size: 24px;
+}
+
+@media (min-width: 1280px) {
+  .title {
+    font-size: 48px;
+  }
+}
+.message-form__input {
+  letter-spacing: 0.4px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__input {
+    letter-spacing: 0.56px;
+  }
+}
+.message__title {
+  letter-spacing: 0.4px;
+}
+
+@media (min-width: 1280px) {
+  .message__title {
+    letter-spacing: 0.64px;
+  }
+}
+.message-form__label {
+  letter-spacing: 0.48px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__label {
+    letter-spacing: 0.64px;
+  }
+}
+.message-form__submit {
+  letter-spacing: 0.56px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__submit {
+    letter-spacing: 0.64px;
+  }
+}
+.reviews-slider__title {
+  letter-spacing: 0.78px;
+}
+
+@media (min-width: 1280px) {
+  .reviews-slider__title {
+    letter-spacing: 1.495px;
+  }
+}
+.price-list-item__name {
+  letter-spacing: 0.91px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__name {
+    letter-spacing: 1.495px;
+  }
+}
+.review-card__text {
+  letter-spacing: 1px;
+}
+
+@media (min-width: 1280px) {
+  .review-card__text {
+    letter-spacing: 3px;
+  }
+}
+.price-list-item__price, .product-card__title {
+  letter-spacing: 1.04px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__price, .product-card__title {
+    letter-spacing: 1.495px;
+  }
+}
+.logo__title {
+  letter-spacing: 1.1px;
+}
+
+@media (min-width: 1280px) {
+  .logo__title {
+    letter-spacing: 1.3px;
+  }
+}
+.review-card__author {
+  letter-spacing: 1.1px;
+}
+
+@media (min-width: 1280px) {
+  .review-card__author {
+    letter-spacing: 2.2px;
+  }
+}
+.price-list-item__description {
+  letter-spacing: 1.2px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__description {
+    letter-spacing: 1.8px;
+  }
+}
+.info-card__title, .info-card__details {
+  letter-spacing: 1.2px;
+}
+
+@media (min-width: 1280px) {
+  .info-card__title, .info-card__details {
+    letter-spacing: 2.2px;
+  }
+}
+.product-card__description, .service-card__description {
+  letter-spacing: 1.4px;
+}
+
+@media (min-width: 1280px) {
+  .product-card__description, .service-card__description {
+    letter-spacing: 1.5px;
+  }
+}
+.service-card__title {
+  letter-spacing: 1.7px;
+}
+
+@media (min-width: 1280px) {
+  .service-card__title {
+    letter-spacing: 1.8px;
+  }
+}
+.menu__subtitle {
+  letter-spacing: 1.8px;
+}
+
+@media (min-width: 1280px) {
+  .menu__subtitle {
+    letter-spacing: 3px;
+  }
+}
+.video__title {
+  letter-spacing: 1.8px;
+}
+
+@media (min-width: 1280px) {
+  .video__title {
+    letter-spacing: 3.6px;
+  }
+}
+.menu__title {
+  letter-spacing: 2.2px;
+}
+
+@media (min-width: 1280px) {
+  .menu__title {
+    letter-spacing: 4.8px;
+  }
+}
+.title {
+  letter-spacing: 2.4px;
+}
+
+@media (min-width: 1280px) {
+  .title {
+    letter-spacing: 4.8px;
+  }
+}
 .service-card {
   display: flex;
   flex-direction: column;
@@ -1040,26 +4182,10 @@ h6 {
   margin-bottom: 10px;
 }
 .service-card__title {
-  font-size: 17px;
-  letter-spacing: 1.7px;
   margin-bottom: 2px;
 }
-@media (min-width: 1280px) {
-  .service-card__title {
-    font-size: 18px;
-    letter-spacing: 1.8px;
-  }
-}
 .service-card__description {
-  font-size: 14px;
-  letter-spacing: 1.4px;
   text-align: center;
-}
-@media (min-width: 1280px) {
-  .service-card__description {
-    font-size: 15px;
-    letter-spacing: 1.5px;
-  }
 }
 
 .services-and-video {
@@ -1105,17 +4231,333 @@ h6 {
   letter-spacing: 1.495px;
 }
 
-.title {
-  text-align: center;
-  color: rgba(0, 0, 0, 0.84);
-  font-size: 24px;
-  letter-spacing: 2.4px;
+.message-form__input {
+  font-size: 10px;
 }
+
+@media (min-width: 1280px) {
+  .message-form__input {
+    font-size: 14px;
+  }
+}
+.message__title {
+  font-size: 10px;
+}
+
+@media (min-width: 1280px) {
+  .message__title {
+    font-size: 16px;
+  }
+}
+.review-card__text {
+  font-size: 10px;
+}
+
+@media (min-width: 1280px) {
+  .review-card__text {
+    font-size: 30px;
+  }
+}
+.logo__title {
+  font-size: 11px;
+}
+
+@media (min-width: 1280px) {
+  .logo__title {
+    font-size: 13px;
+  }
+}
+.review-card__author {
+  font-size: 11px;
+}
+
+@media (min-width: 1280px) {
+  .review-card__author {
+    font-size: 22px;
+  }
+}
+.message-form__label {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__label {
+    font-size: 16px;
+  }
+}
+.price-list-item__description {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__description {
+    font-size: 18px;
+  }
+}
+.info-card__title, .info-card__details {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  .info-card__title, .info-card__details {
+    font-size: 22px;
+  }
+}
+.reviews-slider__title {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  .reviews-slider__title {
+    font-size: 23px;
+  }
+}
+.product-card__description, .service-card__description {
+  font-size: 14px;
+}
+
+@media (min-width: 1280px) {
+  .product-card__description, .service-card__description {
+    font-size: 15px;
+  }
+}
+.message-form__submit {
+  font-size: 14px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__submit {
+    font-size: 16px;
+  }
+}
+.price-list-item__name {
+  font-size: 14px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__name {
+    font-size: 23px;
+  }
+}
+.price-list-item__price, .product-card__title {
+  font-size: 16px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__price, .product-card__title {
+    font-size: 23px;
+  }
+}
+.service-card__title {
+  font-size: 17px;
+}
+
+@media (min-width: 1280px) {
+  .service-card__title {
+    font-size: 18px;
+  }
+}
+.menu__subtitle {
+  font-size: 18px;
+}
+
+@media (min-width: 1280px) {
+  .menu__subtitle {
+    font-size: 30px;
+  }
+}
+.video__title {
+  font-size: 18px;
+}
+
+@media (min-width: 1280px) {
+  .video__title {
+    font-size: 36px;
+  }
+}
+.menu__title {
+  font-size: 22px;
+}
+
+@media (min-width: 1280px) {
+  .menu__title {
+    font-size: 48px;
+  }
+}
+.title {
+  font-size: 24px;
+}
+
 @media (min-width: 1280px) {
   .title {
     font-size: 48px;
+  }
+}
+.message-form__input {
+  letter-spacing: 0.4px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__input {
+    letter-spacing: 0.56px;
+  }
+}
+.message__title {
+  letter-spacing: 0.4px;
+}
+
+@media (min-width: 1280px) {
+  .message__title {
+    letter-spacing: 0.64px;
+  }
+}
+.message-form__label {
+  letter-spacing: 0.48px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__label {
+    letter-spacing: 0.64px;
+  }
+}
+.message-form__submit {
+  letter-spacing: 0.56px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__submit {
+    letter-spacing: 0.64px;
+  }
+}
+.reviews-slider__title {
+  letter-spacing: 0.78px;
+}
+
+@media (min-width: 1280px) {
+  .reviews-slider__title {
+    letter-spacing: 1.495px;
+  }
+}
+.price-list-item__name {
+  letter-spacing: 0.91px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__name {
+    letter-spacing: 1.495px;
+  }
+}
+.review-card__text {
+  letter-spacing: 1px;
+}
+
+@media (min-width: 1280px) {
+  .review-card__text {
+    letter-spacing: 3px;
+  }
+}
+.price-list-item__price, .product-card__title {
+  letter-spacing: 1.04px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__price, .product-card__title {
+    letter-spacing: 1.495px;
+  }
+}
+.logo__title {
+  letter-spacing: 1.1px;
+}
+
+@media (min-width: 1280px) {
+  .logo__title {
+    letter-spacing: 1.3px;
+  }
+}
+.review-card__author {
+  letter-spacing: 1.1px;
+}
+
+@media (min-width: 1280px) {
+  .review-card__author {
+    letter-spacing: 2.2px;
+  }
+}
+.price-list-item__description {
+  letter-spacing: 1.2px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__description {
+    letter-spacing: 1.8px;
+  }
+}
+.info-card__title, .info-card__details {
+  letter-spacing: 1.2px;
+}
+
+@media (min-width: 1280px) {
+  .info-card__title, .info-card__details {
+    letter-spacing: 2.2px;
+  }
+}
+.product-card__description, .service-card__description {
+  letter-spacing: 1.4px;
+}
+
+@media (min-width: 1280px) {
+  .product-card__description, .service-card__description {
+    letter-spacing: 1.5px;
+  }
+}
+.service-card__title {
+  letter-spacing: 1.7px;
+}
+
+@media (min-width: 1280px) {
+  .service-card__title {
+    letter-spacing: 1.8px;
+  }
+}
+.menu__subtitle {
+  letter-spacing: 1.8px;
+}
+
+@media (min-width: 1280px) {
+  .menu__subtitle {
+    letter-spacing: 3px;
+  }
+}
+.video__title {
+  letter-spacing: 1.8px;
+}
+
+@media (min-width: 1280px) {
+  .video__title {
+    letter-spacing: 3.6px;
+  }
+}
+.menu__title {
+  letter-spacing: 2.2px;
+}
+
+@media (min-width: 1280px) {
+  .menu__title {
     letter-spacing: 4.8px;
   }
+}
+.title {
+  letter-spacing: 2.4px;
+}
+
+@media (min-width: 1280px) {
+  .title {
+    letter-spacing: 4.8px;
+  }
+}
+.title {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.84);
 }
 .title__and-sign {
   color: rgba(53, 36, 88, 0.84);
@@ -1123,6 +4565,330 @@ h6 {
   letter-spacing: inherit;
 }
 
+.message-form__input {
+  font-size: 10px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__input {
+    font-size: 14px;
+  }
+}
+.message__title {
+  font-size: 10px;
+}
+
+@media (min-width: 1280px) {
+  .message__title {
+    font-size: 16px;
+  }
+}
+.review-card__text {
+  font-size: 10px;
+}
+
+@media (min-width: 1280px) {
+  .review-card__text {
+    font-size: 30px;
+  }
+}
+.logo__title {
+  font-size: 11px;
+}
+
+@media (min-width: 1280px) {
+  .logo__title {
+    font-size: 13px;
+  }
+}
+.review-card__author {
+  font-size: 11px;
+}
+
+@media (min-width: 1280px) {
+  .review-card__author {
+    font-size: 22px;
+  }
+}
+.message-form__label {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__label {
+    font-size: 16px;
+  }
+}
+.price-list-item__description {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__description {
+    font-size: 18px;
+  }
+}
+.info-card__title, .info-card__details {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  .info-card__title, .info-card__details {
+    font-size: 22px;
+  }
+}
+.reviews-slider__title {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  .reviews-slider__title {
+    font-size: 23px;
+  }
+}
+.product-card__description, .service-card__description {
+  font-size: 14px;
+}
+
+@media (min-width: 1280px) {
+  .product-card__description, .service-card__description {
+    font-size: 15px;
+  }
+}
+.message-form__submit {
+  font-size: 14px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__submit {
+    font-size: 16px;
+  }
+}
+.price-list-item__name {
+  font-size: 14px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__name {
+    font-size: 23px;
+  }
+}
+.price-list-item__price, .product-card__title {
+  font-size: 16px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__price, .product-card__title {
+    font-size: 23px;
+  }
+}
+.service-card__title {
+  font-size: 17px;
+}
+
+@media (min-width: 1280px) {
+  .service-card__title {
+    font-size: 18px;
+  }
+}
+.menu__subtitle {
+  font-size: 18px;
+}
+
+@media (min-width: 1280px) {
+  .menu__subtitle {
+    font-size: 30px;
+  }
+}
+.video__title {
+  font-size: 18px;
+}
+
+@media (min-width: 1280px) {
+  .video__title {
+    font-size: 36px;
+  }
+}
+.menu__title {
+  font-size: 22px;
+}
+
+@media (min-width: 1280px) {
+  .menu__title {
+    font-size: 48px;
+  }
+}
+.title {
+  font-size: 24px;
+}
+
+@media (min-width: 1280px) {
+  .title {
+    font-size: 48px;
+  }
+}
+.message-form__input {
+  letter-spacing: 0.4px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__input {
+    letter-spacing: 0.56px;
+  }
+}
+.message__title {
+  letter-spacing: 0.4px;
+}
+
+@media (min-width: 1280px) {
+  .message__title {
+    letter-spacing: 0.64px;
+  }
+}
+.message-form__label {
+  letter-spacing: 0.48px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__label {
+    letter-spacing: 0.64px;
+  }
+}
+.message-form__submit {
+  letter-spacing: 0.56px;
+}
+
+@media (min-width: 1280px) {
+  .message-form__submit {
+    letter-spacing: 0.64px;
+  }
+}
+.reviews-slider__title {
+  letter-spacing: 0.78px;
+}
+
+@media (min-width: 1280px) {
+  .reviews-slider__title {
+    letter-spacing: 1.495px;
+  }
+}
+.price-list-item__name {
+  letter-spacing: 0.91px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__name {
+    letter-spacing: 1.495px;
+  }
+}
+.review-card__text {
+  letter-spacing: 1px;
+}
+
+@media (min-width: 1280px) {
+  .review-card__text {
+    letter-spacing: 3px;
+  }
+}
+.price-list-item__price, .product-card__title {
+  letter-spacing: 1.04px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__price, .product-card__title {
+    letter-spacing: 1.495px;
+  }
+}
+.logo__title {
+  letter-spacing: 1.1px;
+}
+
+@media (min-width: 1280px) {
+  .logo__title {
+    letter-spacing: 1.3px;
+  }
+}
+.review-card__author {
+  letter-spacing: 1.1px;
+}
+
+@media (min-width: 1280px) {
+  .review-card__author {
+    letter-spacing: 2.2px;
+  }
+}
+.price-list-item__description {
+  letter-spacing: 1.2px;
+}
+
+@media (min-width: 1280px) {
+  .price-list-item__description {
+    letter-spacing: 1.8px;
+  }
+}
+.info-card__title, .info-card__details {
+  letter-spacing: 1.2px;
+}
+
+@media (min-width: 1280px) {
+  .info-card__title, .info-card__details {
+    letter-spacing: 2.2px;
+  }
+}
+.product-card__description, .service-card__description {
+  letter-spacing: 1.4px;
+}
+
+@media (min-width: 1280px) {
+  .product-card__description, .service-card__description {
+    letter-spacing: 1.5px;
+  }
+}
+.service-card__title {
+  letter-spacing: 1.7px;
+}
+
+@media (min-width: 1280px) {
+  .service-card__title {
+    letter-spacing: 1.8px;
+  }
+}
+.menu__subtitle {
+  letter-spacing: 1.8px;
+}
+
+@media (min-width: 1280px) {
+  .menu__subtitle {
+    letter-spacing: 3px;
+  }
+}
+.video__title {
+  letter-spacing: 1.8px;
+}
+
+@media (min-width: 1280px) {
+  .video__title {
+    letter-spacing: 3.6px;
+  }
+}
+.menu__title {
+  letter-spacing: 2.2px;
+}
+
+@media (min-width: 1280px) {
+  .menu__title {
+    letter-spacing: 4.8px;
+  }
+}
+.title {
+  letter-spacing: 2.4px;
+}
+
+@media (min-width: 1280px) {
+  .title {
+    letter-spacing: 4.8px;
+  }
+}
 .video {
   display: flex;
   position: relative;
@@ -1162,14 +4928,6 @@ h6 {
 }
 .video__title {
   color: #fff;
-  font-size: 18px;
-  letter-spacing: 1.8px;
-}
-@media (min-width: 1280px) {
-  .video__title {
-    font-size: 36px;
-    letter-spacing: 3.6px;
-  }
 }
 .video__decoration-pic {
   display: flex;

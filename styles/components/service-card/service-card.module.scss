@@ -1,3 +1,5 @@
+@use '../../common/extends/--fonts.scss';
+
 .service-card {
 	display: flex;
 	flex-direction: column;
@@ -23,24 +25,14 @@
 	}
 
 	&__title {
-		font-size: 17px;
-		letter-spacing: 1.7px;
+		@extend %--font-size_17-18;
+		@extend %--letter-spacing_17-18;
 		margin-bottom: 2px;
-
-		@media (min-width: 1280px) {
-			font-size: 18px;
-			letter-spacing: 1.8px;
-		}
 	}
 
 	&__description {
-		font-size: 14px;
-		letter-spacing: 1.4px;
+		@extend %--font-size_14-15;
+		@extend %--letter-spacing_14-15;
 		text-align: center;
-
-		@media (min-width: 1280px) {
-			font-size: 15px;
-			letter-spacing: 1.5px;
-		}
 	}
 }

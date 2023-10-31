@@ -1,0 +1,255 @@
+%--font-size {
+	&_10-14 {
+		font-size: 10px;
+		@media (min-width: 1280px) {
+			font-size: 14px;
+		}
+	}
+
+	&_10-16 {
+		font-size: 10px;
+		@media (min-width: 1280px) {
+			font-size: 16px;
+		}
+	}
+
+	&_10-30 {
+		font-size: 10px;
+		@media (min-width: 1280px) {
+			font-size: 30px;
+		}
+	}
+
+	&_11-13 {
+		font-size: 11px;
+		@media (min-width: 1280px) {
+			font-size: 13px;
+		}
+	}
+
+	&_11-22 {
+		font-size: 11px;
+		@media (min-width: 1280px) {
+			font-size: 22px;
+		}
+	}
+
+	&_12-16 {
+		font-size: 12px;
+		@media (min-width: 1280px) {
+			font-size: 16px;
+		}
+	}
+
+	&_12-18 {
+		font-size: 12px;
+		@media (min-width: 1280px) {
+			font-size: 18px;
+		}
+	}
+
+	&_12-22 {
+		font-size: 12px;
+		@media (min-width: 1280px) {
+			font-size: 22px;
+		}
+	}
+
+	&_12-23 {
+		font-size: 12px;
+		@media (min-width: 1280px) {
+			font-size: 23px;
+		}
+	}
+
+	&_14-15 {
+		font-size: 14px;
+		@media (min-width: 1280px) {
+			font-size: 15px;
+		}
+	}
+
+	&_14-16 {
+		font-size: 14px;
+		@media (min-width: 1280px) {
+			font-size: 16px;
+		}
+	}
+
+	&_14-23 {
+		font-size: 14px;
+		@media (min-width: 1280px) {
+			font-size: 23px;
+		}
+	}
+
+	&_16-23 {
+		font-size: 16px;
+		@media (min-width: 1280px) {
+			font-size: 23px;
+		}
+	}
+
+	&_17-18 {
+		font-size: 17px;
+		@media (min-width: 1280px) {
+			font-size: 18px;
+		}
+	}
+
+	&_18-30 {
+		font-size: 18px;
+		@media (min-width: 1280px) {
+			font-size: 30px;
+		}
+	}
+
+	&_18-36 {
+		font-size: 18px;
+		@media (min-width: 1280px) {
+			font-size: 36px;
+		}
+	}
+
+	&_22-48 {
+		font-size: 22px;
+		@media (min-width: 1280px) {
+			font-size: 48px;
+		}
+	}
+
+	&_24-48 {
+		font-size: 24px;
+		@media (min-width: 1280px) {
+			font-size: 48px;
+		}
+	}
+}
+
+%--letter-spacing {
+	&_04-056 {
+		letter-spacing: 0.4px;
+		@media (min-width: 1280px) {
+			letter-spacing: 0.56px;
+		}
+	}
+
+	&_04-064 {
+		letter-spacing: 0.4px;
+		@media (min-width: 1280px) {
+			letter-spacing: 0.64px;
+		}
+	}
+
+	&_048-064 {
+		letter-spacing: 0.48px;
+		@media (min-width: 1280px) {
+			letter-spacing: 0.64px;
+		}
+	}
+
+	&_056-064 {
+		letter-spacing: 0.56px;
+		@media (min-width: 1280px) {
+			letter-spacing: 0.64px;
+		}
+	}
+
+	&_078-1495 {
+		letter-spacing: 0.78px;
+		@media (min-width: 1280px) {
+			letter-spacing: 1.495px;
+		}
+	}
+
+	&_091-1495 {
+		letter-spacing: 0.91px;
+		@media (min-width: 1280px) {
+			letter-spacing: 1.495px;
+		}
+	}
+
+	&_1-3 {
+		letter-spacing: 1px;
+		@media (min-width: 1280px) {
+			letter-spacing: 3px;
+		}
+	}
+
+	&_104-1495 {
+		letter-spacing: 1.04px;
+		@media (min-width: 1280px) {
+			letter-spacing: 1.495px;
+		}
+	}
+
+	&_11-13 {
+		letter-spacing: 1.1px;
+		@media (min-width: 1280px) {
+			letter-spacing: 1.3px;
+		}
+	}
+
+	&_11-22 {
+		letter-spacing: 1.1px;
+		@media (min-width: 1280px) {
+			letter-spacing: 2.2px;
+		}
+	}
+
+	&_12-18 {
+		letter-spacing: 1.2px;
+		@media (min-width: 1280px) {
+			letter-spacing: 1.8px;
+		}
+	}
+
+	&_12-22 {
+		letter-spacing: 1.2px;
+		@media (min-width: 1280px) {
+			letter-spacing: 2.2px;
+		}
+	}
+
+	&_14-15 {
+		letter-spacing: 1.4px;
+		@media (min-width: 1280px) {
+			letter-spacing: 1.5px;
+		}
+	}
+
+	&_17-18 {
+		letter-spacing: 1.7px;
+		@media (min-width: 1280px) {
+			letter-spacing: 1.8px;
+		}
+	}
+
+	&_18-3 {
+		letter-spacing: 1.8px;
+		@media (min-width: 1280px) {
+			letter-spacing: 3px;
+		}
+	}
+
+	&_18-36 {
+		letter-spacing: 1.8px;
+		@media (min-width: 1280px) {
+			letter-spacing: 3.6px;
+		}
+	}
+
+	&_22-48 {
+		letter-spacing: 2.2px;
+		@media (min-width: 1280px) {
+			letter-spacing: 4.8px;
+		}
+	}
+
+	&_24-48 {
+		letter-spacing: 2.4px;
+		@media (min-width: 1280px) {
+			letter-spacing: 4.8px;
+		}
+	}
+}

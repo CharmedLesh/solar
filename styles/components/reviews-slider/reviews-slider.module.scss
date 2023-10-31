@@ -1,3 +1,5 @@
+@use '../../common/extends/--fonts.scss';
+
 .reviews-slider {
 	width: 100%;
 	background-color: rgba(142, 153, 147, 0.62);
@@ -12,14 +14,12 @@
 	}
 
 	&__title {
+		@extend %--font-size_12-23;
+		@extend %--letter-spacing_078-1495;
 		text-align: center;
-		font-size: 12px;
 		margin-bottom: 14px;
-		letter-spacing: 0.78px;
 
 		@media (min-width: 1280px) {
-			font-size: 23px;
-			letter-spacing: 1.495px;
 			margin-bottom: 60px;
 		}
 	}

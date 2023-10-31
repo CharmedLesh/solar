@@ -1,3 +1,5 @@
+@use '../../common/extends/--fonts.scss';
+
 .logo {
 	&__link {
 		display: flex;
@@ -7,15 +9,10 @@
 	}
 
 	&__title {
+		@extend %--font-size_11-13;
+		@extend %--letter-spacing_11-13;
 		line-height: 15px;
 		color: rgba(0, 0, 0, 0.8);
-		font-size: 11px;
-		letter-spacing: 1.1px;
-
-		@media (min-width: 1280px) {
-			font-size: 13px;
-			letter-spacing: 1.3px;
-		}
 	}
 
 	svg {

@@ -1,3 +1,5 @@
+@use '../../common/extends/--fonts.scss';
+
 .video {
 	display: flex;
 	position: relative;
@@ -36,14 +38,9 @@
 	}
 
 	&__title {
+		@extend %--font-size_18-36;
+		@extend %--letter-spacing_18-36;
 		color: #fff;
-		font-size: 18px;
-		letter-spacing: 1.8px;
-
-		@media (min-width: 1280px) {
-			font-size: 36px;
-			letter-spacing: 3.6px;
-		}
 	}
 
 	&__decoration-pic {

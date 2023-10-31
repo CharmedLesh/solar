@@ -1,31 +1,10 @@
-@use '../../common/modules/fonts';
+@use '../../common/extends/--fonts.scss';
 
 .info-card {
 	$self: &;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
-	// &--font-size_12-22 {
-	// 	#{ $self }__title,
-	// 	#{ $self }__details {
-	// 		font-size: 12px;
-	// 		letter-spacing: 1.2px;
-
-	// 		@media (min-width: 1280px) {
-	// 			font-size: 22px;
-	// 			letter-spacing: 2.2px;
-	// 		}
-	// 	}
-	// }
-
-	&--font-size_12-22 {
-		#{ $self }__title,
-		#{ $self }__details {
-			@extend %--font-size_12-22;
-			@extend %--letter-spacing_12-22;
-		}
-	}
 
 	&__pic {
 		display: flex;
@@ -37,6 +16,8 @@
 	}
 
 	&__title {
+		@extend %--font-size_12-22;
+		@extend %--letter-spacing_12-22;
 		font-family: $open-sans;
 		font-weight: 700;
 		text-align: center;
@@ -44,13 +25,11 @@
 		@media (min-width: 1280px) {
 			margin-bottom: 30px;
 		}
-
-		// @extend %--font-size_12-22;
-		// @extend %--letter-spacing_12-22;
-		// @include --font-size_12-22($self);
 	}
 
 	&__details {
+		@extend %--font-size_12-22;
+		@extend %--letter-spacing_12-22;
 		font-family: $open-sans;
 		text-align: center;
 		display: flex;
@@ -59,10 +38,6 @@
 			flex-direction: column;
 			align-items: center;
 		}
-
-		// @extend %--font-size_12-22;
-		// @extend %--letter-spacing_12-22;
-		// @include --font-size_12-22($self);
 	}
 
 	&__text-separator {

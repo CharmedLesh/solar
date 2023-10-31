@@ -1,27 +1,22 @@
+@use '../../common/extends/--fonts.scss';
+
 .review-card {
 	&__text {
+		@extend %--font-size_10-30;
+		@extend %--letter-spacing_1-3;
 		text-align: center;
-		font-size: 10px;
-		letter-spacing: 1px;
 		margin-bottom: 8px;
 
 		@media (min-width: 1280px) {
-			font-size: 30px;
-			letter-spacing: 3px;
 			margin-bottom: 36px;
 			max-height: 122.4px;
 		}
 	}
 
 	&__author {
+		@extend %--font-size_11-22;
+		@extend %--letter-spacing_11-22;
 		text-align: center;
 		font-family: $open-sans;
-		font-size: 11px;
-		letter-spacing: 1.1px;
-
-		@media (min-width: 1280px) {
-			font-size: 22px;
-			letter-spacing: 2.2px;
-		}
 	}
 }

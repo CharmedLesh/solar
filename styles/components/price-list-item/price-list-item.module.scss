@@ -1,3 +1,5 @@
+@use '../../common/extends/--fonts.scss';
+
 .price-list-item {
 	@media (min-width: 1280px) {
 		display: flex;
@@ -14,37 +16,28 @@
 	}
 
 	&__name {
-		font-size: 14px;
-		letter-spacing: 0.91px;
+		@extend %--font-size_14-23;
+		@extend %--letter-spacing_091-1495;
 		margin-bottom: 10px;
 
 		@media (min-width: 1280px) {
-			font-size: 23px;
-			letter-spacing: 1.495px;
 			margin-bottom: 18px;
 		}
 	}
 
 	&__description {
+		@extend %--font-size_12-18;
+		@extend %--letter-spacing_12-18;
 		color: rgba(0, 0, 0, 0.8);
-		font-size: 12px;
-		letter-spacing: 1.2px;
-
-		@media (min-width: 1280px) {
-			font-size: 18px;
-			letter-spacing: 1.8px;
-		}
 	}
 
 	&__price {
-		font-size: 16px;
-		letter-spacing: 1.04px;
+		@extend %--font-size_16-23;
+		@extend %--letter-spacing_104-1495;
 		text-align: center;
 
 		@media (min-width: 1280px) {
 			width: 15%;
-			font-size: 23px;
-			letter-spacing: 1.495px;
 			text-align: start;
 		}
 	}

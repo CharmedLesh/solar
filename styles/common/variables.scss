@@ -67,14 +67,3 @@ $open-sans: 'Open Sans', sans-serif;
 	mask: url('../img/arrow-right-sm.svg');
 	-webkit-mask: url('../img/arrow-right-sm.svg');
 }
-
-//
-// @mixin --font-size_12-22($self) {
-// 	#{$self}--font-size_12-22 & {
-// 		font-size: 12px;
-
-// 		@media (min-width: 1280px) {
-// 			font-size: 22px;
-// 		}
-// 	}
-// }
