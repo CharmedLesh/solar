@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Prata&display=swap');
-
 // fonts
 $prata: 'Prata', serif;
 $open-sans: 'Open Sans', sans-serif;
@@ -69,3 +67,14 @@ $open-sans: 'Open Sans', sans-serif;
 	mask: url('../img/arrow-right-sm.svg');
 	-webkit-mask: url('../img/arrow-right-sm.svg');
 }
+
+//
+// @mixin --font-size_12-22($self) {
+// 	#{$self}--font-size_12-22 & {
+// 		font-size: 12px;
+
+// 		@media (min-width: 1280px) {
+// 			font-size: 22px;
+// 		}
+// 	}
+// }

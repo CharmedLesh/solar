@@ -1,4 +1,193 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Prata&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  font-family: "Prata", serif;
+  font-size: 18px;
+  text-align: left;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #000;
+}
+
+button {
+  font-size: 100%;
+  font-family: inherit;
+  border: 0;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 23px;
+}
+
+h4 {
+  font-size: 22px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+h6 {
+  font-size: 18px;
+}
+
 .action-block {
   display: flex;
   flex-direction: column;
@@ -205,22 +394,32 @@
   }
 }
 
-.info-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .info-card--font-size_12-22 .info-card__title,
 .info-card--font-size_12-22 .info-card__details {
   font-size: 12px;
-  letter-spacing: 1.2px;
 }
+
 @media (min-width: 1280px) {
   .info-card--font-size_12-22 .info-card__title,
   .info-card--font-size_12-22 .info-card__details {
     font-size: 22px;
+  }
+}
+.info-card--font-size_12-22 .info-card__title,
+.info-card--font-size_12-22 .info-card__details {
+  letter-spacing: 1.2px;
+}
+
+@media (min-width: 1280px) {
+  .info-card--font-size_12-22 .info-card__title,
+  .info-card--font-size_12-22 .info-card__details {
     letter-spacing: 2.2px;
   }
+}
+.info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .info-card__pic {
   display: flex;
@@ -1161,193 +1360,4 @@
 }
 #products-slider__slider .amp-carousel-button-prev:focus {
   background-color: #48544f;
-}
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  box-sizing: border-box;
-  font-family: "Prata", serif;
-  font-size: 18px;
-  text-align: left;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  color: #000;
-}
-
-button {
-  font-size: 100%;
-  font-family: inherit;
-  border: 0;
-  padding: 0;
-  background: none;
-  cursor: pointer;
-}
-
-a {
-  text-decoration: none;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-textarea {
-  resize: none;
-}
-
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
-}
-
-h1 {
-  font-size: 48px;
-}
-
-h2 {
-  font-size: 36px;
-}
-
-h3 {
-  font-size: 23px;
-}
-
-h4 {
-  font-size: 22px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-}
-
-h5 {
-  font-size: 18px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-}
-
-h6 {
-  font-size: 18px;
 }/*# sourceMappingURL=index.css.map */

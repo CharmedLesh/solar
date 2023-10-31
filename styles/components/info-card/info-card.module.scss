@@ -1,19 +1,29 @@
+@use '../../common/modules/fonts';
+
 .info-card {
 	$self: &;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 
+	// &--font-size_12-22 {
+	// 	#{ $self }__title,
+	// 	#{ $self }__details {
+	// 		font-size: 12px;
+	// 		letter-spacing: 1.2px;
+
+	// 		@media (min-width: 1280px) {
+	// 			font-size: 22px;
+	// 			letter-spacing: 2.2px;
+	// 		}
+	// 	}
+	// }
+
 	&--font-size_12-22 {
 		#{ $self }__title,
 		#{ $self }__details {
-			font-size: 12px;
-			letter-spacing: 1.2px;
-
-			@media (min-width: 1280px) {
-				font-size: 22px;
-				letter-spacing: 2.2px;
-			}
+			@extend %--font-size_12-22;
+			@extend %--letter-spacing_12-22;
 		}
 	}
 
@@ -34,6 +44,10 @@
 		@media (min-width: 1280px) {
 			margin-bottom: 30px;
 		}
+
+		// @extend %--font-size_12-22;
+		// @extend %--letter-spacing_12-22;
+		// @include --font-size_12-22($self);
 	}
 
 	&__details {
@@ -45,6 +59,10 @@
 			flex-direction: column;
 			align-items: center;
 		}
+
+		// @extend %--font-size_12-22;
+		// @extend %--letter-spacing_12-22;
+		// @include --font-size_12-22($self);
 	}
 
 	&__text-separator {
