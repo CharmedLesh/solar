@@ -1,12 +1,8 @@
-@use '../../common/extends/--fonts.scss';
-
 .message-form {
 	display: flex;
 	flex-direction: column;
 
 	&__label {
-		@extend %--font-size_12-16;
-		@extend %--letter-spacing_048-064;
 		margin-bottom: 3px;
 		margin-top: 8px;
 
@@ -21,8 +17,6 @@
 	}
 
 	&__input {
-		@extend %--font-size_10-14;
-		@extend %--letter-spacing_04-056;
 		border: 1px solid #8e9993;
 		background: #fff;
 		color: rgba(0, 0, 0, 0.51);
@@ -62,8 +56,6 @@
 	}
 
 	&__submit {
-		@extend %--font-size_14-16;
-		@extend %--letter-spacing_056-064;
 		cursor: pointer;
 		background-color: #6a7571;
 		border: none;

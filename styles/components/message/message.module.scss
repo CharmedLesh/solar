@@ -1,5 +1,3 @@
-@use '../../common/extends/--fonts.scss';
-
 .message {
 	width: 100%;
 	display: flex;
@@ -24,8 +22,6 @@
 	}
 
 	&__title {
-		@extend %--font-size_10-16;
-		@extend %--letter-spacing_04-064;
 		text-align: center;
 
 		@media (min-width: 1280px) {

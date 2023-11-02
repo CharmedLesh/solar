@@ -1,5 +1,3 @@
-@use '../../common/extends/--fonts.scss';
-
 .product-card {
 	display: flex;
 	flex-direction: column;
@@ -42,8 +40,6 @@
 	}
 
 	&__title {
-		@extend %--font-size_16-23;
-		@extend %--letter-spacing_104-1495;
 		text-align: center;
 	}
 
@@ -53,8 +49,6 @@
 	}
 
 	&__description {
-		@extend %--font-size_14-15;
-		@extend %--letter-spacing_14-15;
 		text-align: center;
 
 		@media (min-width: 1280px) {

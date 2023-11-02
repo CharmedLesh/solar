@@ -1,0 +1,9 @@
+.title {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.84);
+}
+.title__and-sign {
+  color: rgba(53, 36, 88, 0.84);
+  font-size: inherit;
+  letter-spacing: inherit;
+}/*# sourceMappingURL=title.module.css.map */

@@ -1,0 +1,35 @@
+@media (min-width: 1280px) {
+  .price-list-item {
+    display: flex;
+  }
+}
+.price-list-item__info {
+  margin-bottom: 10px;
+}
+@media (min-width: 1280px) {
+  .price-list-item__info {
+    width: 85%;
+    padding-right: 20px;
+    margin-bottom: 0px;
+  }
+}
+.price-list-item__name {
+  margin-bottom: 10px;
+}
+@media (min-width: 1280px) {
+  .price-list-item__name {
+    margin-bottom: 18px;
+  }
+}
+.price-list-item__description {
+  color: rgba(0, 0, 0, 0.8);
+}
+.price-list-item__price {
+  text-align: center;
+}
+@media (min-width: 1280px) {
+  .price-list-item__price {
+    width: 15%;
+    text-align: start;
+  }
+}/*# sourceMappingURL=price-list-item.module.css.map */
