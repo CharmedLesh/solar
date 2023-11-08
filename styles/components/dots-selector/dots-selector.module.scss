@@ -19,7 +19,15 @@
 
 		&[option][selected] {
 			outline: none;
-			background-color: #6a7571;
+			background-color: #808885;
+		}
+
+		&:has(+ .dots-selector__dot-button[selected]) {
+			background-color: #a2a2a2;
+		}
+
+		&[option][selected] + .dots-selector__dot-button {
+			background-color: #a2a2a2;
 		}
 	}
 }

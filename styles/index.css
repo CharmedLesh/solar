@@ -584,7 +584,13 @@ h6 {
 }
 .dots-selector__dot-button[option][selected] {
   outline: none;
-  background-color: #6a7571;
+  background-color: #808885;
+}
+.dots-selector__dot-button:has(+ .dots-selector__dot-button[selected]) {
+  background-color: #a2a2a2;
+}
+.dots-selector__dot-button[option][selected] + .dots-selector__dot-button {
+  background-color: #a2a2a2;
 }
 
 .footer {
